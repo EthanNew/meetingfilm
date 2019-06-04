@@ -1,12 +1,14 @@
 package com.stylefeng.guns.rest.model.cinema.requestvo;
 
+import java.io.Serializable;
+
 /**
  * @Author: Ethan New
  * @Date: 2019/6/4 19:29
  * @Description:
  */
 
-public class RequestCinemasVo {
+public class RequestCinemasVo implements Serializable {
     private Integer brandId = 99;
     private Integer hallType = 99;
     private Integer districtId = 99;

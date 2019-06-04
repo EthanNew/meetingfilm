@@ -8,4 +8,16 @@
         <result column="show_name" property="showName" />
     </resultMap>
 
+
+    <resultMap id="AreaBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.AreaBo">
+        <id column="UUID" property="areaId" />
+        <result column="show_name" property="areaName" />
+        <result column="is_active" property="isActive" />
+    </resultMap>
+
+    <select id="getAreaList" resultMap="AreaBoMap">
+        SELECT `UUID`, show_name, is_active
+        FROM mtime_area_dict_t
+    </select>
+
 </mapper>

@@ -15,4 +15,44 @@
         <result column="minimum_price" property="minimumPrice" />
     </resultMap>
 
+
+    <resultMap id="CinemaMap" type="com.stylefeng.guns.rest.model.cinema.bo.CinemaBo">
+        <id column="UUID" property="uuid" />
+        <result column="cinema_name" property="cinemaName" />
+        <result column="cinema_address" property="address" />
+        <result column="minimum_price" property="minimumPrice" />
+    </resultMap>
+
+    <select id="getPageCinemas" resultMap="CinemaMap">
+        SELECT `UUID`, cinema_name, cinema_address, minimum_price
+        FROM mtime_cinema_t
+        <where>
+            <if test="brandId != 99">
+                AND brand_id = #{brandId}
+            </if>
+            <if test="hallType != 99">
+                AND hall_ids LIKE concat("%#", #{hallType}, "#%")
+            </if>
+            <if test="districtId != 99">
+                AND area_id = #{districtId}
+            </if>
+        </where>
+    </select>
+
+    <select id="getTotalPage" resultType="int">
+        SELECT count(*)
+        FROM mtime_cinema_t
+        <where>
+            <if test="brandId != 99">
+                AND brand_id = #{brandId}
+            </if>
+            <if test="hallType != 99">
+                AND hall_ids LIKE concat("%#", #{hallType}, "#%")
+            </if>
+            <if test="districtId != 99">
+                AND area_id = #{districtId}
+            </if>
+        </where>
+    </select>
+
 </mapper>

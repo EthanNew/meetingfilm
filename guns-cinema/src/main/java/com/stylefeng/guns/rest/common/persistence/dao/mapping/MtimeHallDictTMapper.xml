@@ -9,4 +9,16 @@
         <result column="seat_address" property="seatAddress" />
     </resultMap>
 
+
+    <resultMap id="HallTypeBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.HallTypeBo">
+        <id column="UUID" property="halltypeId" />
+        <result column="show_name" property="halltypeName" />
+        <result column="is_active" property="isActive" />
+    </resultMap>
+
+    <select id="getHallTypeList" resultMap="HallTypeBoMap">
+        SELECT `UUID`, show_name, is_active
+        FROM mtime_hall_dict_t
+    </select>
+
 </mapper>

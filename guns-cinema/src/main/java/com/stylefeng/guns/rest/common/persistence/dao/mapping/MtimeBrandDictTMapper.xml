@@ -8,4 +8,15 @@
         <result column="show_name" property="showName" />
     </resultMap>
 
+    <resultMap id="BrandBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.BrandBo">
+        <id column="UUID" property="brandId" />
+        <result column="show_name" property="brandName" />
+        <result column="is_active" property="isActive" />
+    </resultMap>
+
+    <select id="getBrandList" resultMap="BrandBoMap">
+        SELECT `UUID`, show_name, is_active
+        FROM mtime_brand_dict_t
+    </select>
+
 </mapper>
