@@ -9,9 +9,9 @@ import java.io.Serializable;
  */
 
 public class RequestConditionVo implements Serializable {
-    private Integer brandId;
-    private Integer hallType;
-    private Integer areaId;
+    private Integer brandId = 99;
+    private Integer hallType = 99;
+    private Integer areaId = 99;
 
     public RequestConditionVo() {
     }
