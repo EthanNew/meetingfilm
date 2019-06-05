@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74c1c498-0b44-4843-9b1a-a61127177b32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/guns-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/guns-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/GunsRestApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/GunsRestServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/modular/user/UserAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/modular/user/UserImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/target/test-classes/com/stylefeng/guns/generator/EntityGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/target/test-classes/com/stylefeng/guns/generator/EntityGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-gateway/guns-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-gateway/guns-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/test/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/guns-admin/target/" />
+    <ignored path="$PROJECT_DIR$/guns-api/target/" />
+    <ignored path="$PROJECT_DIR$/guns-generator/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/guns-core/target/" />
+    <ignored path="$PROJECT_DIR$/guns-rest/target/" />
+    <ignored path="$PROJECT_DIR$/guns-cinema/target/" />
+    <ignored path="$PROJECT_DIR$/guns-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/guns-film/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="561449940">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="25" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="12" />
+          <entry key="YAML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="XML" value="16" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/GunsFilmApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/GunsGatewayApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/vo/ResponseVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-768">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/guns-film/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/guns-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/guns-api/pom.xml" />
+        <option value="$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/vo/ResponseVO.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/FilmServiceApi.java" />
+        <option value="$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java" />
+        <option value="$PROJECT_DIR$/guns-film/src/main/resources/application.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\develop\repository" />
+        <option name="mavenHome" value="D:/develop/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\develop\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-235" />
+    <option name="y" value="12" />
+    <option name="width" value="1046" />
+    <option name="height" value="820" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetingfilm" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="stylefeng" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559733026750" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../guns" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.stylefeng.guns.api.film" />
+      <recent name="com.stylefeng.guns.rest.modular.vo" />
+      <recent name="com.stylefeng.guns.rest.modular.film.vo" />
+      <recent name="com.stylefeng.guns.rest.modular.film" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\meetingfilm\guns-film\src\main\java\com\stylefeng\guns\rest\modular" />
+      <recent name="D:\workspace\meetingfilm\guns-api\src\main\java\com\stylefeng\guns\api\film" />
+      <recent name="D:\workspace\meetingfilm" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GunsGatewayApplication">
+    <configuration name="EntityGenerator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guns-film" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stylefeng.guns.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.stylefeng.guns.generator" />
+      <option name="MAIN_CLASS_NAME" value="com.stylefeng.guns.generator.EntityGenerator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GunsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stylefeng.guns.GunsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GunsCinemaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns-cinema" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stylefeng.guns.rest.GunsCinemaApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GunsFilmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns-film" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stylefeng.guns.rest.GunsFilmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GunsGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stylefeng.guns.rest.GunsGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GunsRestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns-rest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stylefeng.guns.rest.GunsRestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.GunsApplication" />
+      <item itemvalue="Spring Boot.GunsRestApplication" />
+      <item itemvalue="Spring Boot.GunsCinemaApplication" />
+      <item itemvalue="Spring Boot.GunsGatewayApplication" />
+      <item itemvalue="Spring Boot.GunsFilmApplication" />
+      <item itemvalue="JUnit.EntityGenerator" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EntityGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74c1c498-0b44-4843-9b1a-a61127177b32" name="Default Changelist" comment="" />
+      <created>1559639501244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559639501244</updated>
+      <workItem from="1559639505742" duration="1887000" />
+      <workItem from="1559727742599" duration="1426000" />
+      <workItem from="1559732094919" duration="923000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="EntityGenerator - 2019.06.05 at 17h 59m 10s.xml">
+      <configuration name="EntityGenerator" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4236000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26156813" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.022008253" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32969153" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/guns-film/db/guns_rest.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="49" column="26" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFilmTMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3910">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/film/FilmController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/film/vo/FilmIndexVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/vo/BannerVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/vo/FilmInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/vo/FilmVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/FilmServiceApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/modular/film/service/DefaultFilmServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/GunsFilmApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/GunsGatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/vo/ResponseVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>guns-film</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -3,6 +3,7 @@ package com.stylefeng.guns.user.modular.service;
 import com.stylefeng.guns.user.common.persistence.VO.MTimeUserVO;
 import com.stylefeng.guns.user.common.persistence.model.MtimeUserT;
 import com.baomidou.mybatisplus.service.IService;
+import com.stylefeng.guns.user.modular.auth.controller.dto.AuthRequest;
 
 import java.util.Map;
 
@@ -19,4 +20,6 @@ public interface IMtimeUserTService extends IService<MtimeUserT> {
     Map insertMtimeUserVO(MTimeUserVO mTimeUserVO);
 
     Map checkUsername(String username);
+
+    boolean login(AuthRequest authRequest);
 }
