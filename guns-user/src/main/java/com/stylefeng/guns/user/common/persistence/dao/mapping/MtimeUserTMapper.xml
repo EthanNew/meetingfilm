@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.user.common.persistence.dao.MtimeUserTMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.user.common.persistence.model.MtimeUserT">
+        <id column="UUID" property="uuid" />
+        <result column="user_name" property="userName" />
+        <result column="user_pwd" property="userPwd" />
+        <result column="nick_name" property="nickName" />
+        <result column="user_sex" property="userSex" />
+        <result column="birthday" property="birthday" />
+        <result column="email" property="email" />
+        <result column="user_phone" property="userPhone" />
+        <result column="address" property="address" />
+        <result column="head_url" property="headUrl" />
+        <result column="biography" property="biography" />
+        <result column="life_state" property="lifeState" />
+        <result column="begin_time" property="beginTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <resultMap id="VOMap" type="com.stylefeng.guns.user.common.persistence.VO.MTimeUserVO">
+        <id column="UUID" property="UUID" />
+        <result column="user_name" property="username" />
+        <result column="user_pwd" property="password" />
+        <result column="nick_name" property="nickname" />
+        <result column="user_sex" property="sex" />
+        <result column="birthday" property="birthday" />
+        <result column="email" property="email" />
+        <result column="user_phone" property="phone" />
+        <result column="address" property="address" />
+        <result column="head_url" property="headUrl" />
+        <result column="biography" property="biography" />
+        <result column="life_state" property="lifeState" />
+        <result column="begin_time" property="beginTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <sql id="Base_column_list">
+        UUID,user_name,user_pwd,nick_name,user_sex,birthday,email,user_phone,address,head_url
+        biography,life_state,begin_time,update_time
+    </sql>
+
+    <select id="checkUsername" resultMap="VOMap">
+        select <include refid="Base_column_list"/>
+        from mtime_user_t
+        where user_name = #{username}
+    </select>
+
+    <select id="login" resultMap="VOMap">
+        select <include refid="Base_column_list"/>
+        from mtime_user_t
+        where user_name = #{authRequest.userName} and user_pwd = #{authRequest.password}
+    </select>
+
+    <insert id="insertMtimeUserVO">
+        insert into mtime_user_t
+        (
+        <if test="user.username != null">
+            user_name,
+        </if>
+        <if test="user.password != null">
+            user_pwd,
+        </if>
+        <if test="user.nickname != null">
+            nick_name,
+        </if>
+        <if test="user.sex != null">
+            user_sex,
+        </if>
+        <if test="user.birthday != null">
+            birthday,
+        </if>
+        <if test="user.email != null">
+            email,
+        </if>
+        <if test="user.phone != null">
+            user_phone,
+        </if>
+        <if test="user.address != null">
+            address,
+        </if>
+        <if test="user.headUrl != null">
+            head_url,
+        </if>
+        <if test="user.biography != null">
+            biography,
+        </if>
+        <if test="user.lifeState != null">
+            life_state,
+        </if>
+        <if test="user.beginTime != null">
+            begin_time,
+        </if>
+        <if test="user.updateTime != null">
+            update_time
+        </if>
+        )
+        value (
+        <if test="user.username != null">
+           #{user.username},
+        </if>
+        <if test="user.password != null">
+            #{user.password},
+        </if>
+        <if test="user.nickname != null">
+            #{user.nickname},
+        </if>
+        <if test="user.sex != null">
+           #{user.sex},
+        </if>
+        <if test="user.birthday != null">
+           #{user.birthday},
+        </if>
+        <if test="user.email != null">
+           #{user.email},
+        </if>
+        <if test="user.phone != null">
+           #{user.phone},
+        </if>
+        <if test="user.address != null">
+            #{user.address},
+        </if>
+        <if test="user.headUrl != null">
+           #{user.headUrl},
+        </if>
+        <if test="user.biography != null">
+            #{user.biography},
+        </if>
+        <if test="user.lifeState != null">
+            #{user.lifeState},
+        </if>
+        <if test="user.beginTime != null">
+           #{user.beginTime},
+        </if>
+        <if test="user.updateTime != null">
+            #{user.updateTime}
+        </if>
+        )
+    </insert>
+</mapper>

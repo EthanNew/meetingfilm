@@ -8,4 +8,20 @@
         <result column="show_name" property="showName" />
     </resultMap>
 
+    <resultMap id="BrandBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.BrandBo">
+        <id column="UUID" property="brandId" />
+        <result column="show_name" property="brandName" />
+        <result column="is_active" property="isActive" />
+    </resultMap>
+
+    <select id="getBrandList" resultMap="BrandBoMap">
+        SELECT DISTINCT b.`UUID`, b.`show_name`, c.brand_id is_active
+        FROM mtime_brand_dict_t b LEFT JOIN mtime_cinema_t c ON c.brand_id = b.`UUID`
+        <where>
+            <if test="brandId != 99">
+                AND b.`UUID` = #{brandId}
+            </if>
+        </where>
+    </select>
+
 </mapper>

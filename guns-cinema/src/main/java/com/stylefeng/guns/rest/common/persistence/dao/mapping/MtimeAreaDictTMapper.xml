@@ -8,4 +8,21 @@
         <result column="show_name" property="showName" />
     </resultMap>
 
+
+    <resultMap id="AreaBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.AreaBo">
+        <id column="UUID" property="areaId" />
+        <result column="show_name" property="areaName" />
+        <result column="is_active" property="isActive" />
+    </resultMap>
+
+    <select id="getAreaList" resultMap="AreaBoMap">
+        SELECT a.`UUID`, a.`show_name`, c.area_id is_active
+        FROM mtime_area_dict_t a LEFT JOIN mtime_cinema_t c ON c.area_id = a.`UUID`
+        <where>
+            <if test="areaId != 99">
+                AND c.area_id = #{areaId}
+            </if>
+        </where>
+    </select>
+
 </mapper>

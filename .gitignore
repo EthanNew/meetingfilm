@@ -31,3 +31,9 @@ hs_err_pid*
 .classpath
 .project
 .settings/
+
+
+.idea/
+.README.md
+.gitattributes
+

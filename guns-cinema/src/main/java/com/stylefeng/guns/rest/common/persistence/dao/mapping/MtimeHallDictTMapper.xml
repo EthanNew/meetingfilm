@@ -9,4 +9,23 @@
         <result column="seat_address" property="seatAddress" />
     </resultMap>
 
+
+    <resultMap id="HallTypeBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.HallTypeBo">
+        <id column="UUID" property="halltypeId" />
+        <result column="show_name" property="halltypeName" />
+        <result column="is_active" property="isActive" />
+    </resultMap>
+
+    <select id="getHallTypeList" resultMap="HallTypeBoMap">
+        SELECT DISTINCT h.`UUID`, h.`show_name`, c.`UUID` is_active
+        FROM mtime_hall_dict_t h LEFT JOIN mtime_cinema_t c ON c.hall_ids LIKE CONCAT("%#", h.`UUID`, "#%")
+        <where>
+            <if test="hallType != 99">
+                AND c.hall_ids LIKE CONCAT("%#", #{hallType}, "#%")
+            </if>
+        </where>
+        GROUP BY h.`UUID`
+    </select>
+
+
 </mapper>
