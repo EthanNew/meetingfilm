@@ -7,10 +7,7 @@ import com.stylefeng.guns.rest.common.persistence.dao.MtimeBrandDictTMapper;
 import com.stylefeng.guns.rest.common.persistence.dao.MtimeCinemaTMapper;
 import com.stylefeng.guns.rest.common.persistence.dao.MtimeHallDictTMapper;
 import com.stylefeng.guns.rest.common.persistence.model.MtimeBrandDictT;
-import com.stylefeng.guns.rest.model.cinema.bo.AreaBo;
-import com.stylefeng.guns.rest.model.cinema.bo.BrandBo;
-import com.stylefeng.guns.rest.model.cinema.bo.CinemaBo;
-import com.stylefeng.guns.rest.model.cinema.bo.HallTypeBo;
+import com.stylefeng.guns.rest.model.cinema.bo.*;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
 import com.stylefeng.guns.rest.modular.cinema.CinemaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,7 +64,7 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public List<BrandBo> getBrandList(Integer brandId) {
+    public List<BrandBo> getBrandList(int brandId) {
         List<BrandBo> brandBos = brandMapper.getBrandList(brandId);
         return brandBos;
     }
@@ -78,7 +75,7 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public List<AreaBo> getAreaList(Integer areaId) {
+    public List<AreaBo> getAreaList(int areaId) {
         List<AreaBo> areaBos = areaMapper.getAreaList(areaId);
         return areaBos;
     }
@@ -89,8 +86,13 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public List<HallTypeBo> getHallTypeList(Integer hallType) {
+    public List<HallTypeBo> getHallTypeList(int hallType) {
         List<HallTypeBo> hallTypeBos = hallMapper.getHallTypeList(hallType);
         return hallTypeBos;
+    }
+
+    @Override
+    public CinemaInfoBo getCinemaInfo(int cinemaId) {
+        return null;
     }
 }

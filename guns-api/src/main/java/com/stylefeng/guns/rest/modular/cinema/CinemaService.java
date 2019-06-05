@@ -1,9 +1,6 @@
 package com.stylefeng.guns.rest.modular.cinema;
 
-import com.stylefeng.guns.rest.model.cinema.bo.AreaBo;
-import com.stylefeng.guns.rest.model.cinema.bo.BrandBo;
-import com.stylefeng.guns.rest.model.cinema.bo.CinemaBo;
-import com.stylefeng.guns.rest.model.cinema.bo.HallTypeBo;
+import com.stylefeng.guns.rest.model.cinema.bo.*;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
 
 import java.util.List;
@@ -34,19 +31,26 @@ public interface CinemaService {
      * @param brandId
      * @return
      */
-    List<BrandBo> getBrandList(Integer brandId);
+    List<BrandBo> getBrandList(int brandId);
 
     /**
      * 获取影院列表查询条件之影厅条件
      * @param areaId
      * @return
      */
-    List<AreaBo> getAreaList(Integer areaId);
+    List<AreaBo> getAreaList(int areaId);
 
     /**
      * 获取影院列表查询条件之行政区条件
      * @param hallType
      * @return
      */
-    List<HallTypeBo> getHallTypeList(Integer hallType);
+    List<HallTypeBo> getHallTypeList(int hallType);
+
+    /**
+     * 获取影院信息
+     * @param cinemaId
+     * @return
+     */
+    CinemaInfoBo getCinemaInfo(int cinemaId);
 }

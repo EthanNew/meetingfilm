@@ -17,8 +17,15 @@
     </resultMap>
 
     <select id="getHallTypeList" resultMap="HallTypeBoMap">
-        SELECT `UUID`, show_name, is_active
-        FROM mtime_hall_dict_t
+        SELECT DISTINCT h.`UUID`, h.`show_name`, c.`UUID` is_active
+        FROM mtime_hall_dict_t h LEFT JOIN mtime_cinema_t c ON c.hall_ids LIKE CONCAT("%#", h.`UUID`, "#%")
+        <where>
+            <if test="hallType != 99">
+                AND c.hall_ids LIKE CONCAT("%#", #{hallType}, "#%")
+            </if>
+        </where>
+        GROUP BY h.`UUID`
     </select>
+
 
 </mapper>
