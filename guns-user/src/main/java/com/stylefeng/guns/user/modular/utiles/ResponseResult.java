@@ -1,4 +1,4 @@
-package com.stylefeng.guns.rest.modular.utiles;
+package com.stylefeng.guns.user.modular.utiles;
 
 import java.util.HashMap;
 import java.util.Map;

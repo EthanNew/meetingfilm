@@ -1,4 +1,4 @@
-package com.stylefeng.guns.rest.common.persistence.model;
+package com.stylefeng.guns.user.common.persistence.model;
 
 import com.baomidou.mybatisplus.enums.IdType;
 import java.util.Date;
