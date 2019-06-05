@@ -11,17 +11,17 @@ public class CinemaInfoBo {
     private String cinemaName;
     private String cinemaPhone;
     private String imgUrl;
-    private String cinemaAdress;
+    private String cinemaAddress;
 
     public CinemaInfoBo() {
     }
 
-    public CinemaInfoBo(Integer cinemaId, String cinemaName, String cinemaPhone, String imgUrl, String cinemaAdress) {
+    public CinemaInfoBo(Integer cinemaId, String cinemaName, String cinemaPhone, String imgUrl, String cinemaAddress) {
         this.cinemaId = cinemaId;
         this.cinemaName = cinemaName;
         this.cinemaPhone = cinemaPhone;
         this.imgUrl = imgUrl;
-        this.cinemaAdress = cinemaAdress;
+        this.cinemaAddress = cinemaAddress;
     }
 
     public Integer getCinemaId() {
@@ -56,11 +56,11 @@ public class CinemaInfoBo {
         this.imgUrl = imgUrl;
     }
 
-    public String getCinemaAdress() {
-        return cinemaAdress;
+    public String getCinemaAddress() {
+        return cinemaAddress;
     }
 
-    public void setCinemaAdress(String cinemaAdress) {
-        this.cinemaAdress = cinemaAdress;
+    public void setCinemaAddress(String cinemaAddress) {
+        this.cinemaAddress = cinemaAddress;
     }
 }

@@ -91,8 +91,14 @@ public class CinemaServiceImpl implements CinemaService {
         return hallTypeBos;
     }
 
+    /**
+     * 获取影院信息
+     * @param cinemaId
+     * @return
+     */
     @Override
     public CinemaInfoBo getCinemaInfo(int cinemaId) {
-        return null;
+        CinemaInfoBo cinemaInfoBo = cinemaMapper.getCinemaInfo(cinemaId);
+        return cinemaInfoBo;
     }
 }
