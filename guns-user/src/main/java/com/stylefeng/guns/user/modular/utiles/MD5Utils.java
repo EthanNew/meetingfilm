@@ -1,6 +1,7 @@
 package com.stylefeng.guns.user.modular.utiles;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.security.MessageDigest;
@@ -22,7 +23,7 @@ public class MD5Utils {
             }
             return sb.toString();
         } catch (NoSuchAlgorithmException e) {
-            Logger.getLogger(MD5Utils.class).info(e);
+             LoggerFactory.getLogger(MD5Utils.class).info(e.getMessage());
         }
         return "";
     }

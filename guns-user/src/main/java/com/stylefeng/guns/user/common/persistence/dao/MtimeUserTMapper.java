@@ -3,6 +3,7 @@ package com.stylefeng.guns.user.common.persistence.dao;
 import com.stylefeng.guns.user.common.persistence.VO.MTimeUserVO;
 import com.stylefeng.guns.user.common.persistence.model.MtimeUserT;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.stylefeng.guns.user.modular.auth.controller.dto.AuthRequest;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -15,7 +16,9 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface MtimeUserTMapper extends BaseMapper<MtimeUserT> {
 
-    MtimeUserT checkUsername(@Param("username") String username);
+    MTimeUserVO checkUsername(@Param("username") String username);
 
     int insertMtimeUserVO(@Param("user") MTimeUserVO mTimeUserVO);
+
+    MTimeUserVO login(@Param("authRequest") AuthRequest authRequest);
 }

@@ -17,15 +17,15 @@ public class DecryptTest {
     public static void main(String[] args) {
 
         String salt = "0iqwhi";
-
+/*
         SimpleObject simpleObject = new SimpleObject();
         simpleObject.setUser("stylefeng");
         simpleObject.setAge(12);
         simpleObject.setName("ffff");
         simpleObject.setTips("code");
 
-        String jsonString = JSON.toJSONString(simpleObject);
-        String encode = new Base64SecurityAction().doAction(jsonString);
+        String jsonString = JSON.toJSONString(simpleObject);*/
+        String encode = new Base64SecurityAction().doAction("{'username':'zhangsan','password':'123456'}");
         String md5 = MD5Util.encrypt(encode + salt);
 
         BaseTransferEntity baseTransferEntity = new BaseTransferEntity();
