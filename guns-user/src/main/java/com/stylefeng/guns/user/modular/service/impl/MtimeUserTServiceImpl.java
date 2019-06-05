@@ -8,8 +8,6 @@ import com.stylefeng.guns.user.modular.auth.controller.dto.AuthRequest;
 import com.stylefeng.guns.user.modular.service.IMtimeUserTService;
 import com.stylefeng.guns.user.modular.utiles.MD5Utils;
 import com.stylefeng.guns.user.modular.utiles.ResponseResult;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Isolation;
@@ -17,6 +15,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -36,6 +35,7 @@ public class MtimeUserTServiceImpl extends ServiceImpl<MtimeUserTMapper, MtimeUs
 
     /**
      * 用户注册，对密码二次散列存储
+     *
      * @param mTimeUserVO
      * @return
      */
@@ -63,6 +63,7 @@ public class MtimeUserTServiceImpl extends ServiceImpl<MtimeUserTMapper, MtimeUs
 
     /**
      * 用户名是否可用检查
+     *
      * @param username
      * @return
      */
@@ -78,6 +79,7 @@ public class MtimeUserTServiceImpl extends ServiceImpl<MtimeUserTMapper, MtimeUs
 
     /**
      * 用户登录，对密码二次散列后与数据库 比对
+     *
      * @param authRequest
      * @return ture 数据库存在该用户，false 该用户不存在
      */
@@ -86,5 +88,30 @@ public class MtimeUserTServiceImpl extends ServiceImpl<MtimeUserTMapper, MtimeUs
         String pwd = MD5Utils.getMd5(MD5Utils.getMd5(authRequest.getPassword()));
         authRequest.setPassword(pwd);
         return mtimeUserTMapper.login(authRequest) != null;
+    }
+
+    @Override
+    public Map getUserInfo(String username) {
+        MTimeUserVO mTimeUserVO = mtimeUserTMapper.checkUsername(username);
+        Map map = new HashMap<>();
+        map.put("data", mTimeUserVO);
+        map.put("status", 0);
+        return map;
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW,isolation = Isolation.REPEATABLE_READ)
+    public Map updateUserInfo(MTimeUserVO mTimeUserVO) {
+        if(mTimeUserVO != null && mTimeUserVO.getUUID() != null) {
+            mTimeUserVO.setUpdateTime(new Date());
+            int i = mtimeUserTMapper.updateUserInfo(mTimeUserVO);
+            if (i == 1) {
+                Map map = new HashMap();
+                map.put("data", mtimeUserTMapper.selectMTimeUserVOById(mTimeUserVO.getUUID()));
+                map.put("status", 0);
+                return map;
+            }
+        }
+        return ResponseResult.responseResult("用户信息修改失败",1);
     }
 }
