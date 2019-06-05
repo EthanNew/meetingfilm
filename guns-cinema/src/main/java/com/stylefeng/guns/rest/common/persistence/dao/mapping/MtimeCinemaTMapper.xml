@@ -61,7 +61,6 @@
         <result column="cinema_phone" property="cinemaPhone" />
         <result column="img_address" property="imgUrl" />
         <result column="cinema_address" property="cinemaAddress" />
-
     </resultMap>
 
     <select id="getCinemaInfo" resultMap="CinemaInfoMap">

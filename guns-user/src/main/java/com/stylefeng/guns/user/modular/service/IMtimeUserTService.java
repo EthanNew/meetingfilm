@@ -22,4 +22,8 @@ public interface IMtimeUserTService extends IService<MtimeUserT> {
     Map checkUsername(String username);
 
     boolean login(AuthRequest authRequest);
+
+    Map getUserInfo(String username);
+
+    Map updateUserInfo(MTimeUserVO mTimeUserVO);
 }

@@ -1,5 +1,6 @@
 package com.stylefeng.guns.rest.model.cinema.bo;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

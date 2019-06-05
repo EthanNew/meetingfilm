@@ -5,6 +5,7 @@ import com.stylefeng.guns.api.film.vo.FilmInfo;
 import com.stylefeng.guns.api.film.vo.FilmVO;
 import com.stylefeng.guns.rest.model.cinema.bo.FilmBo;
 
+
 import java.util.List;
 
 public interface FilmServiceApi {
@@ -31,4 +32,5 @@ public interface FilmServiceApi {
      * @return
      */
     List<FilmBo> getFilmList();
+
 }

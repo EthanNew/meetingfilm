@@ -6,6 +6,7 @@ import com.stylefeng.guns.rest.model.cinema.bo.FilmBo;
 
 import java.util.List;
 
+
 /**
  * <p>
  * 影片主表 Mapper 接口

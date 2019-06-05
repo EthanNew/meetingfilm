@@ -7,17 +7,20 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
+
 /**
  * @Author: Ethan New
  * @Date: 2019/6/5 18:01
  * @Description:
  */
 
+
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class FieldBo implements Serializable {
+
     private Integer fieldId;
     private String beginTime;
     private String endTime;

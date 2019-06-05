@@ -135,10 +135,10 @@ public class DefaultFilmServiceImpl implements FilmServiceApi {
 
         return filmInfos;
     }
-
     @Override
     public List<FilmBo> getFilmList() {
         List<FilmBo> filmBos = mtimeFilmTMapper.getFilmList();
         return filmBos;
     }
+
 }
