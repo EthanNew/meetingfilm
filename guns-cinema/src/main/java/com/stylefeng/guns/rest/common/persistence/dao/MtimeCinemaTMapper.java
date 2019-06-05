@@ -3,6 +3,7 @@ package com.stylefeng.guns.rest.common.persistence.dao;
 import com.stylefeng.guns.rest.common.persistence.model.MtimeCinemaT;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.stylefeng.guns.rest.model.cinema.bo.CinemaBo;
+import com.stylefeng.guns.rest.model.cinema.bo.CinemaInfoBo;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
 import org.springframework.stereotype.Repository;
 
@@ -33,4 +34,11 @@ public interface MtimeCinemaTMapper extends BaseMapper<MtimeCinemaT> {
      * @return
      */
     int getTotalPage(RequestCinemasVo requestCinemasVo);
+
+    /**
+     * 获取影院信息
+     * @param cinemaId
+     * @return
+     */
+    CinemaInfoBo getCinemaInfo(int cinemaId);
 }
