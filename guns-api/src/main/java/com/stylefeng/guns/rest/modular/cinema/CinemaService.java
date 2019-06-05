@@ -53,4 +53,5 @@ public interface CinemaService {
      * @return
      */
     CinemaInfoBo getCinemaInfo(int cinemaId);
+
 }

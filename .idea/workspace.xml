@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74c1c498-0b44-4843-9b1a-a61127177b32" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseFilmsVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guns-api/guns-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/guns-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/FilmServiceApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/FilmServiceApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/AreaBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/AreaBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/BrandBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/BrandBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaInfoBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaInfoBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FieldBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FieldBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FilmBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FilmBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/HallTypeBo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/HallTypeBo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseCinemasVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseCinemasVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseConditionVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseConditionVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseExceptionVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseExceptionVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeCinemaTMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeCinemaTMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/MtimeFilmTMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/MtimeFilmTMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFilmTMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFilmTMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/modular/film/service/DefaultFilmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/modular/film/service/DefaultFilmServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guns-film/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guns-film/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/GunsRestApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/GunsRestServletInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/modular/user/UserAPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-film/target/classes/com/stylefeng/guns/rest/modular/user/UserImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-film/target/test-classes/com/stylefeng/guns/generator/EntityGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/guns-film/target/test-classes/com/stylefeng/guns/generator/EntityGenerator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guns-gateway/guns-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-gateway/guns-gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guns-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/test/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/guns-admin/target/" />
     <ignored path="$PROJECT_DIR$/guns-api/target/" />
@@ -27,6 +37,8 @@
     <ignored path="$PROJECT_DIR$/guns-cinema/target/" />
     <ignored path="$PROJECT_DIR$/guns-gateway/target/" />
     <ignored path="$PROJECT_DIR$/guns-film/target/" />
+    <ignored path="$PROJECT_DIR$/guns-user/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,56 +70,107 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="392717279">
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="40" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="6" />
+          <entry key="YAML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="454" />
+          <entry key="SQL" value="20" />
+          <entry key="Scratch" value="11" />
+          <entry key="XML" value="106" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.mvc.usages">
+        <counts>
+          <entry key="RestClientRequestEditorNavigator.fromCode" value="1" />
+          <entry key="RestClientRequestRunnerNavigator.fromCode" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FilmBo.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+            <state relative-caret-position="94">
+              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
               <folding>
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#995#996#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-                <element signature="e#1109#1110#0" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-                <element signature="e#1219#1220#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
-                <element signature="e#1315#1316#0" expanded="true" />
-                <element signature="e#1350#1351#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1429#1430#0" expanded="true" />
-                <element signature="e#1469#1470#0" expanded="true" />
-                <element signature="e#1504#1505#0" expanded="true" />
-                <element signature="e#1535#1536#0" expanded="true" />
-                <element signature="e#1583#1584#0" expanded="true" />
-                <element signature="e#1623#1624#0" expanded="true" />
-                <element signature="e#1656#1657#0" expanded="true" />
-                <element signature="e#1685#1686#0" expanded="true" />
-                <element signature="e#1729#1730#0" expanded="true" />
-                <element signature="e#1765#1766#0" expanded="true" />
-                <element signature="e#1802#1803#0" expanded="true" />
-                <element signature="e#1835#1836#0" expanded="true" />
-                <element signature="e#1887#1888#0" expanded="true" />
-                <element signature="e#1931#1932#0" expanded="true" />
-                <element signature="e#1969#1970#0" expanded="true" />
-                <element signature="e#2002#2003#0" expanded="true" />
-                <element signature="e#2055#2056#0" expanded="true" />
-                <element signature="e#2099#2100#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FilmBo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+            <state relative-caret-position="299">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeCinemaTMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFilmTMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/GunsGatewayApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/GunsCinemaApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/GunsFilmApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -126,6 +189,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/guns-cinema/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/modular/film/service/DefaultFilmServiceImpl.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -135,9 +199,29 @@
         <option value="$PROJECT_DIR$/guns-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/guns-api/pom.xml" />
         <option value="$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/vo/ResponseVO.java" />
-        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/FilmServiceApi.java" />
         <option value="$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/FilmServiceApi.java" />
+        <option value="$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/modular/service/impl/CinemaServiceImpl.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaService.java" />
         <option value="$PROJECT_DIR$/guns-film/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/AreaBo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/BrandBo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaBo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/HallTypeBo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseCinemasVo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseConditionVo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseExceptionVo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseFilmsVo.java" />
+        <option value="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/modular/film/service/DefaultFilmServiceImpl.java" />
+        <option value="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/MtimeFilmTMapper.java" />
+        <option value="$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFieldTMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/GunsGatewayApplication.http" />
+        <option value="$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeCinemaTMapper.xml" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaInfoBo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FieldBo.java" />
+        <option value="$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FilmBo.java" />
+        <option value="$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFilmTMapper.xml" />
+        <option value="$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaController.java" />
       </list>
     </option>
   </component>
@@ -163,10 +247,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-235" />
-    <option name="y" value="12" />
-    <option name="width" value="1046" />
-    <option name="height" value="820" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1395" />
+    <option name="height" value="935" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -175,6 +259,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,7 +270,103 @@
             <path>
               <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="film" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="bo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="responsevo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -217,6 +398,160 @@
               <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="guns-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-cinema" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="persistence" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="mapping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-film" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -281,7 +616,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,14 +625,14 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559733026750" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559742999947" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -312,6 +646,42 @@
       <recent name="D:\workspace\meetingfilm\guns-api\src\main\java\com\stylefeng\guns\api\film" />
       <recent name="D:\workspace\meetingfilm" />
     </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:80/cinema/getFields" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="cinemaId" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:80/cinema/getFields" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:80/cinema/getCondition" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -375,12 +745,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GunsUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stylefeng.guns.user.GunsUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.GunsApplication" />
       <item itemvalue="Spring Boot.GunsRestApplication" />
       <item itemvalue="Spring Boot.GunsCinemaApplication" />
       <item itemvalue="Spring Boot.GunsGatewayApplication" />
       <item itemvalue="Spring Boot.GunsFilmApplication" />
+      <item itemvalue="Spring Boot.GunsUserApplication" />
       <item itemvalue="JUnit.EntityGenerator" />
     </list>
     <recent_temporary>
@@ -402,6 +780,7 @@
       <workItem from="1559639505742" duration="1887000" />
       <workItem from="1559727742599" duration="1426000" />
       <workItem from="1559732094919" duration="923000" />
+      <workItem from="1559736639913" duration="5852000" />
     </task>
     <servers />
   </component>
@@ -411,12 +790,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4236000" />
+    <option name="totallyTimeSpent" value="12339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23025435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2583668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -426,21 +806,21 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3751763" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4203103" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.022008253" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49799198" weight="0.24118477" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.502008" side_tool="true" weight="0.25528914" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966533" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32969153" />
@@ -449,6 +829,40 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2583668" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40761635" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49799198" weight="0.24118477" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.502008" side_tool="true" weight="0.25528914" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966533" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32969153" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -474,9 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFilmTMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/guns-film/src/test/java/com/stylefeng/guns/generator/EntityGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -486,13 +897,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3910">
-          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/film/FilmController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -515,66 +919,270 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/vo/ResponseVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="47" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/modular/service/impl/CinemaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/vo/BannerVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="171">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/vo/FilmInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="95">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/vo/FilmVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="95">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/AreaBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/HallTypeBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseExceptionVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/BrandBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseCinemasVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseConditionVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/api/film/FilmServiceApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="511">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/MtimeFilmTMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/develop/repository/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3.jar!/com/baomidou/mybatisplus/mapper/EntityWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/modular/film/service/DefaultFilmServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="264">
+          <caret line="129" column="16" selection-start-line="129" selection-start-column="16" selection-end-line="129" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFieldTMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="13" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/responsevo/ResponseFilmsVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-cinema/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-475" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/CinemaInfoBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FieldBo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-film/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="77">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/GunsFilmApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="152">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/GunsCinemaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/GunsGatewayApplication.http">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="51" selection-start-column="51" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/GunsGatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/vo/ResponseVO.java">
+    <entry file="file://$PROJECT_DIR$/guns-api/src/main/java/com/stylefeng/guns/rest/model/cinema/bo/FilmBo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-768">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="299">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-cinema/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeCinemaTMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="62" column="59" selection-start-line="62" selection-start-column="59" selection-end-line="62" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-film/src/main/java/com/stylefeng/guns/rest/common/persistence/dao/mapping/MtimeFilmTMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-gateway/src/main/java/com/stylefeng/guns/rest/modular/cinema/CinemaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

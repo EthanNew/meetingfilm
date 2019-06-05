@@ -1,5 +1,10 @@
 package com.stylefeng.guns.rest.model.cinema.bo;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.io.Serializable;
 
 /**
@@ -8,41 +13,12 @@ import java.io.Serializable;
  * @Description:
  */
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class AreaBo implements Serializable {
     private Integer areaId;
     private String areaName;
     private boolean isActive;
-
-    public AreaBo() {
-    }
-
-    public AreaBo(Integer areaId, String areaName, boolean isActive) {
-        this.areaId = areaId;
-        this.areaName = areaName;
-        this.isActive = isActive;
-    }
-
-    public Integer getAreaId() {
-        return areaId;
-    }
-
-    public void setAreaId(Integer areaId) {
-        this.areaId = areaId;
-    }
-
-    public String getAreaName() {
-        return areaName;
-    }
-
-    public void setAreaName(String areaName) {
-        this.areaName = areaName;
-    }
-
-    public boolean isActive() {
-        return isActive;
-    }
-
-    public void setActive(boolean active) {
-        isActive = active;
-    }
 }

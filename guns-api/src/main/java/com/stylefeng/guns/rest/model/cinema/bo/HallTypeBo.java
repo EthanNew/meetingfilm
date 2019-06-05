@@ -1,5 +1,10 @@
 package com.stylefeng.guns.rest.model.cinema.bo;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.io.Serializable;
 
 /**
@@ -8,41 +13,12 @@ import java.io.Serializable;
  * @Description:
  */
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class HallTypeBo implements Serializable {
     private Integer halltypeId;
     private String halltypeName;
     private boolean isActive;
-
-    public HallTypeBo() {
-    }
-
-    public HallTypeBo(Integer halltypeId, String halltypeName, boolean isActive) {
-        this.halltypeId = halltypeId;
-        this.halltypeName = halltypeName;
-        this.isActive = isActive;
-    }
-
-    public Integer getHalltypeId() {
-        return halltypeId;
-    }
-
-    public void setHalltypeId(Integer halltypeId) {
-        this.halltypeId = halltypeId;
-    }
-
-    public String getHalltypeName() {
-        return halltypeName;
-    }
-
-    public void setHalltypeName(String halltypeName) {
-        this.halltypeName = halltypeName;
-    }
-
-    public boolean isActive() {
-        return isActive;
-    }
-
-    public void setActive(boolean active) {
-        isActive = active;
-    }
 }
