@@ -19,8 +19,4 @@ public class ResponseFilmsVo<T> {
     private Integer status;
     private String imgPre;
     private T data;
-
-    public ResponseFilmsVo(int i, String imgPre, T map) {
-
-    }
 }

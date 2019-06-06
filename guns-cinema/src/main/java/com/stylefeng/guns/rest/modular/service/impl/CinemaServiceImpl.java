@@ -2,6 +2,7 @@ package com.stylefeng.guns.rest.modular.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.plugins.pagination.PageHelper;
+import com.stylefeng.guns.api.film.vo.FilmInfo;
 import com.stylefeng.guns.rest.common.persistence.dao.*;
 import com.stylefeng.guns.rest.common.persistence.model.MtimeBrandDictT;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
@@ -103,8 +104,8 @@ public class CinemaServiceImpl implements CinemaService {
 
 
     @Override
-    public FilmBo getFilmByfieldId(int fieldId) {
-        FilmBo filmByfieId = fieldTMapper.getFilmByfieId(fieldId);
+    public FilmInfoBo getFilmByfieldId(int fieldId) {
+        FilmInfoBo filmByfieId = fieldTMapper.getFilmByfieId(fieldId);
         return filmByfieId;
     }
 }

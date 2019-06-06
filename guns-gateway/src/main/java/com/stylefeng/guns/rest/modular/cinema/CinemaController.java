@@ -2,6 +2,7 @@ package com.stylefeng.guns.rest.modular.cinema;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.stylefeng.guns.api.film.FilmServiceApi;
+import com.stylefeng.guns.api.film.vo.FilmInfo;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestConditionVo;
@@ -99,20 +100,20 @@ public class CinemaController {
      * @param fieldId
      * @return
      */
-    @GetMapping("/getFieldInfo")
-    public Object getFieldInfo(@PathVariable(value = "fieldId") int fieldId,@PathVariable(value = "cinemaId") int cinemaId){
+    @PostMapping("/getFieldInfo")
+    public Object getFieldInfo(int fieldId, int cinemaId){
         /*FieldBo fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
         return null;*/
         try {
              CinemaInfoBo cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
-             FilmBo filmByfieldId = cinemaService.getFilmByfieldId(fieldId);
+             FilmInfoBo filmByfieldId = cinemaService.getFilmByfieldId(fieldId);
              List<FilmBo> filmBos = filmService.getFilmList();
              String imgPre = cinemaInfoBo.getImgUrl();
-              Map<String, Object> map = new HashMap<>(16);
-              map.put("cinemaInfo", cinemaInfoBo);
-              map.put("filmList", filmByfieldId );
-              ResponseFilmsVo<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVo<>(0, imgPre, map);
-              return mapResponseFilmsVo;
+             Map<String, Object> map = new HashMap<>(16);
+             map.put("cinemaInfo", cinemaInfoBo);
+             map.put("filmList", filmByfieldId );
+             ResponseFilmsVo<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVo<>(0, imgPre, map);
+             return mapResponseFilmsVo;
         } catch (Exception e) {
             ResponseExceptionVo responseExceptionVo = new ResponseExceptionVo(1, "影院信息查询失败");
             e.printStackTrace();

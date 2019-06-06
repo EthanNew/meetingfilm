@@ -18,8 +18,4 @@ import lombok.Setter;
 public class ResponseExceptionVo {
     private Integer status;
     private String msg;
-
-    public ResponseExceptionVo(int i, String 影院信息查询失败) {
-
-    }
 }

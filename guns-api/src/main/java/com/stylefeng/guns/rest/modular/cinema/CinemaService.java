@@ -1,5 +1,6 @@
 package com.stylefeng.guns.rest.modular.cinema;
 
+import com.stylefeng.guns.api.film.vo.FilmInfo;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
 
@@ -59,7 +60,7 @@ public interface CinemaService {
      * @param fieldId
      * @return
      */
-     FilmBo getFilmByfieldId(int fieldId);
+     FilmInfoBo getFilmByfieldId(int fieldId);
 
 
 

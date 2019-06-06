@@ -20,8 +20,4 @@ public class ResponseCinemasVo<T> {
     private Integer nowPage;
     private Integer totalPage;
     private T data;
-
-    public ResponseCinemasVo(int i, Integer nowPage, int totalPage, T list) {
-
-    }
 }

@@ -18,8 +18,4 @@ import lombok.Setter;
 public class ResponseConditionVo<T> {
     private Integer status;
     private T data;
-
-    public ResponseConditionVo(int i, T map) {
-
-    }
 }

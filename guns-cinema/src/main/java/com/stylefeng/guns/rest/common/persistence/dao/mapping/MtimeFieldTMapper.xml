@@ -13,13 +13,14 @@
         <result column="hall_name" property="hallName" />
         <result column="price" property="price" />
     </resultMap>
-    <resultMap id="FilmResultMap" type="com.stylefeng.guns.rest.common.persistence.model.MtimeHallFilmInfoT">
-        <id column="UUID" property="uuid" />
+
+
+    <resultMap id="FilmResultMap" type="com.stylefeng.guns.rest.model.cinema.bo.FilmInfoBo">
         <result column="film_id" property="filmId" />
+        <result column="film_name" property="filmName"/>
         <result column="film_length" property="filmLength" />
         <result column="film_cats" property="filmCats" />
-        <result column="film_language" property="filmLanguage" />
-        <result column="actors" property="actors" />
+        <result column="film_language" property="filmType" />
         <result column="imgAddress" property="imgAddress" />
     </resultMap>
     <resultMap id="HallResultMap" type="com.stylefeng.guns.rest.common.persistence.model.MtimeHallDictT">
@@ -36,14 +37,14 @@
     </select>-->
 
 
-      <select id="getFilmByfieId" resultMap="FiledResultMap">
-          SELECT hf.UUID,hf.film_id,hf.film_length,hf.film_caats,hf.film_languages,hf.actors,hf.imgAddress
+      <select id="getFilmByfieId" resultMap="FilmResultMap">
+          SELECT hf.film_id, hf.film_name, hf.film_length, hf.film_cats, hf.film_language, hf.img_address
           FROM mtime_hall_film_info_t hf
-          LEFT JOIN mtime_fielm_t f
+          LEFT JOIN mtime_field_t f
           ON hf.film_id = f.film_id
           <where>
-              <if test="f.UUID != 99">
-                  AND f.UUID = #{fieldId }
+              <if test="fieldId != 99">
+                  AND f.`UUID` = #{fieldId}
               </if>
           </where>
       </select>
