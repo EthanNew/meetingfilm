@@ -40,8 +40,7 @@
     </select>
 
     <select id="getTotalPage" resultType="int">
-        SELECT count(*)
-        FROM mtime_cinema_t
+        SELECT count(*) FROM mtime_cinema_t
         <where>
             <if test="brandId != 99">
                 AND brand_id = #{brandId}

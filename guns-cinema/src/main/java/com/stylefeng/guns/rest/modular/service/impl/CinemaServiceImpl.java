@@ -2,10 +2,7 @@ package com.stylefeng.guns.rest.modular.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.plugins.pagination.PageHelper;
-import com.stylefeng.guns.rest.common.persistence.dao.MtimeAreaDictTMapper;
-import com.stylefeng.guns.rest.common.persistence.dao.MtimeBrandDictTMapper;
-import com.stylefeng.guns.rest.common.persistence.dao.MtimeCinemaTMapper;
-import com.stylefeng.guns.rest.common.persistence.dao.MtimeHallDictTMapper;
+import com.stylefeng.guns.rest.common.persistence.dao.*;
 import com.stylefeng.guns.rest.common.persistence.model.MtimeBrandDictT;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
@@ -33,6 +30,8 @@ public class CinemaServiceImpl implements CinemaService {
     MtimeAreaDictTMapper areaMapper;
     @Autowired
     MtimeHallDictTMapper hallMapper;
+    @Autowired
+    MtimeFieldTMapper fieldTMapper;
 
     /**
      * 根据条件查询所有影院
@@ -100,5 +99,17 @@ public class CinemaServiceImpl implements CinemaService {
     public CinemaInfoBo getCinemaInfo(int cinemaId) {
         CinemaInfoBo cinemaInfoBo = cinemaMapper.getCinemaInfo(cinemaId);
         return cinemaInfoBo;
+    }
+
+    @Override
+    public FieldBo getFieldByfieldId(int fieldId) {
+        FieldBo fieldByfieldId = fieldTMapper.getFieldByfieldId(fieldId);
+        return fieldByfieldId;
+    }
+
+    @Override
+    public FilmBo getFilmByfieldId(int fieldId) {
+        FilmBo filmByfieId = fieldTMapper.getFilmByfieId(fieldId);
+        return filmByfieId;
     }
 }

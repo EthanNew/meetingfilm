@@ -78,4 +78,14 @@ public class CinemaController {
         CinemaInfoBo cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
         return null;
     }
+    /**
+     *  根据放映场次ID(fieldId)获取放映信息
+     * @param fieldId
+     * @return
+     */
+    @GetMapping("/getFieldInfo")
+    public Object getFieldInfo(@PathVariable(value = "fieldId", required = true) int fieldId){
+        FieldBo fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
+        return null;
+    }
 }

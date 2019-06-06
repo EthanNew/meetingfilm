@@ -53,4 +53,27 @@ public interface CinemaService {
      * @return
      */
     CinemaInfoBo getCinemaInfo(int cinemaId);
+
+    /**
+     *  根据放映场次ID(fieldId)获取放映信息
+     * @param fieldId
+     * @return
+     */
+    FieldBo getFieldByfieldId(int fieldId);
+
+    /**
+     *  根据放映场次查询播放的电影编号，然后根据电影编号获取对应的电影信息
+     * @param fieldId
+     * @return
+     */
+     FilmBo getFilmByfieldId(int fieldId);
+
+
+    
+
+
+
+
+
+
 }
