@@ -38,11 +38,9 @@ public class AuthFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
-        if (request.getServletPath().equals("/" + jwtProperties.getAuthPath())) {
-            chain.doFilter(request, response);
-            return;
-        }
-        if (request.getRequestURI().endsWith("/register")){
+        String servletPath = request.getServletPath();
+        //用户登录，注册直接放行
+        if (("/register").equals(servletPath) || ("/auth").equals(servletPath)){
             chain.doFilter(request, response);
             return;
         }
@@ -50,13 +48,11 @@ public class AuthFilter extends OncePerRequestFilter {
         String authToken = null;
         if (requestHeader != null && requestHeader.startsWith("Bearer ")) {
             authToken = requestHeader.substring(7);
-
             //验证token是否过期,包含了验证jwt是否正确
             try {
 //                boolean flag = jwtTokenUtil.isTokenExpired(authToken);
                 String s = jedis.get(jwtTokenUtil.getUsernameFromToken(authToken));
-
-                if (flag) {
+                if (s == null) {
                     RenderUtil.renderJson(response, new ErrorTip(BizExceptionEnum.TOKEN_EXPIRED.getCode(), BizExceptionEnum.TOKEN_EXPIRED.getMessage()));
                     return;
                 }
