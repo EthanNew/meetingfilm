@@ -8,6 +8,7 @@ import com.stylefeng.guns.user.common.persistence.dao.MtimeUserTMapper;
 import com.stylefeng.guns.user.modular.service.IMtimeUserTService;
 import com.stylefeng.guns.user.utiles.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
@@ -24,6 +25,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service(interfaceClass = IMtimeUserTService.class)
 @Component
 public class MtimeUserTServiceImpl implements IMtimeUserTService {
+
 
     @Autowired
     MtimeUserTMapper mtimeUserTMapper;

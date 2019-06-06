@@ -9,13 +9,16 @@ import com.stylefeng.guns.user.BO.UserInfoBO;
 import com.stylefeng.guns.user.VO.UserRegistVO;
 import com.stylefeng.guns.user.VO.UserUpdateVO;
 import com.stylefeng.guns.user.modular.service.IMtimeUserTService;
+import com.stylefeng.guns.user.utiles.JedisUtils;
 import com.stylefeng.guns.user.utiles.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import redis.clients.jedis.Jedis;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 /**
  * <p>
@@ -27,6 +30,8 @@ import javax.validation.constraints.NotNull;
  */
 @RestController
 public class MtimeUserTController {
+
+    private Jedis jedis = JedisUtils.getJedisFromPool();
 
     @Autowired
     private JwtTokenUtil jwtTokenUtil;
@@ -67,6 +72,7 @@ public class MtimeUserTController {
             return result.responseResult("", 0, userInfo);
         }
         return result.responseResult("查询失败，用户尚未登录", 1);
+
     }
 
     @PostMapping("/user/updateUserInfo")
@@ -84,16 +90,24 @@ public class MtimeUserTController {
         String header = request.getHeader(jwtProperties.getHeader());
         //访问此接口时先经过filter，保证了header不空且以Bearer 开头
         String authToken = header.substring(7);
-        return result.responseResult("退出成功", 0);
+        String username = jwtTokenUtil.getUsernameFromToken(authToken);
+        Long del = jedis.del(username);
+        if(del == 1) return result.responseResult("退出成功", 0);
+        else return result.responseResult("退出失败，用户尚未登陆", 1);
     }
 
     @PostMapping("/auth")
     public ResponseResult userLogin(@RequestBody @Valid AuthRequest authRequest) {
-        boolean validate = MtimeUserTService.login(authRequest.getUsername(),authRequest.getPassword());
+        String username = authRequest.getUsername();
+        boolean validate = MtimeUserTService.login(username,authRequest.getPassword());
         if (validate) {
             final String randomKey = jwtTokenUtil.getRandomKey();
-            final String token = jwtTokenUtil.generateToken(authRequest.getCredenceName(), randomKey);
-
+            final String token = jwtTokenUtil.generateToken(username, randomKey);
+            //获取token过期时间
+            Date dateFromToken = jwtTokenUtil.getExpirationDateFromToken(token);
+            long l = dateFromToken.getTime() - new Date().getTime();
+            //将token存在redis中，key = 用户名
+            jedis.setex(username, (int) (l / 1000),token);
             return result.responseResult("", 0, new AuthResponse(token, randomKey));
         }
         return result.responseResult("用户名或密码错误", 1);
