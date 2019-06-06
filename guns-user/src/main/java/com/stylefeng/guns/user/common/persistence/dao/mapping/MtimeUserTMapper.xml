@@ -54,6 +54,57 @@
         where user_name = #{authRequest.userName} and user_pwd = #{authRequest.password}
     </select>
 
+    <select id="selectMTimeUserVOById" resultMap="VOMap">
+        select <include refid="Base_column_list"/>
+        from mtime_user_t
+        where UUID = #{uuid}
+    </select>
+
+    <update id="updateUserInfo">
+        update mtime_user_t
+        set
+        <if test="user.username != null">
+            user_name =  #{user.username},
+        </if>
+        <if test="user.password != null">
+            user_pwd = #{user.password},
+        </if>
+        <if test="user.nickname != null">
+            nick_name = #{user.nickname},
+        </if>
+        <if test="user.sex != null">
+            user_sex = #{user.sex},
+        </if>
+        <if test="user.birthday != null">
+            birthday = #{user.birthday},
+        </if>
+        <if test="user.email != null">
+            email = #{user.email},
+        </if>
+        <if test="user.phone != null">
+            user_phone = #{user.phone},
+        </if>
+        <if test="user.address != null">
+            address = #{user.address},
+        </if>
+        <if test="user.headUrl != null">
+            head_url = #{user.headUrl},
+        </if>
+        <if test="user.biography != null">
+            biography = #{user.biography},
+        </if>
+        <if test="user.lifeState != null">
+            life_state = #{user.lifeState},
+        </if>
+        <if test="user.beginTime != null">
+            begin_time = #{user.beginTime},
+        </if>
+        <if test="user.updateTime != null">
+            update_time = #{user.updateTime}
+        </if>
+        where UUID = #{user.UUID}
+    </update>
+
     <insert id="insertMtimeUserVO">
         insert into mtime_user_t
         (

@@ -21,4 +21,8 @@ public interface MtimeUserTMapper extends BaseMapper<MtimeUserT> {
     int insertMtimeUserVO(@Param("user") MTimeUserVO mTimeUserVO);
 
     MTimeUserVO login(@Param("authRequest") AuthRequest authRequest);
+
+    int updateUserInfo(@Param("user") MTimeUserVO mTimeUserVO);
+
+    MTimeUserVO selectMTimeUserVOById(@Param("uuid") Integer uuid);
 }

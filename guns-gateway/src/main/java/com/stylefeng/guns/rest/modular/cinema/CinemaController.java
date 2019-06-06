@@ -1,12 +1,14 @@
 package com.stylefeng.guns.rest.modular.cinema;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.stylefeng.guns.api.film.FilmServiceApi;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestConditionVo;
 import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseCinemasVo;
 import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseConditionVo;
 import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseExceptionVo;
+import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseFilmsVo;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -25,6 +27,8 @@ public class CinemaController {
 
     @Reference
     CinemaService cinemaService;
+    @Reference
+    FilmServiceApi filmService;
 
     /**
      * 根据条件查询所有影院
@@ -74,9 +78,21 @@ public class CinemaController {
      * @return
      */
     @RequestMapping(value = "/getFields", method = {RequestMethod.GET, RequestMethod.POST})
-    public Object getFields(@PathVariable(value = "cinemaId", required = true) int cinemaId) {
-        CinemaInfoBo cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
-        return null;
+    public Object getFields(int cinemaId) {
+        try {
+            CinemaInfoBo cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
+            List<FilmBo> filmBos = filmService.getFilmList();
+            String imgPre = cinemaInfoBo.getImgUrl();
+            Map<String, Object> map = new HashMap<>(16);
+            map.put("cinemaInfo", cinemaInfoBo);
+            map.put("filmList", filmBos);
+            ResponseFilmsVo<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVo<>(0, imgPre, map);
+            return mapResponseFilmsVo;
+        } catch (Exception e) {
+            ResponseExceptionVo responseExceptionVo = new ResponseExceptionVo(1, "影院信息查询失败");
+            e.printStackTrace();
+            return responseExceptionVo;
+        }
     }
     /**
      *  根据放映场次ID(fieldId)获取放映信息
@@ -84,8 +100,23 @@ public class CinemaController {
      * @return
      */
     @GetMapping("/getFieldInfo")
-    public Object getFieldInfo(@PathVariable(value = "fieldId", required = true) int fieldId){
-        FieldBo fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
-        return null;
+    public Object getFieldInfo(@PathVariable(value = "fieldId") int fieldId,@PathVariable(value = "cinemaId") int cinemaId){
+        /*FieldBo fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
+        return null;*/
+        try {
+             CinemaInfoBo cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
+             FilmBo filmByfieldId = cinemaService.getFilmByfieldId(fieldId);
+             List<FilmBo> filmBos = filmService.getFilmList();
+             String imgPre = cinemaInfoBo.getImgUrl();
+              Map<String, Object> map = new HashMap<>(16);
+              map.put("cinemaInfo", cinemaInfoBo);
+              map.put("filmList", filmByfieldId );
+              ResponseFilmsVo<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVo<>(0, imgPre, map);
+              return mapResponseFilmsVo;
+        } catch (Exception e) {
+            ResponseExceptionVo responseExceptionVo = new ResponseExceptionVo(1, "影院信息查询失败");
+            e.printStackTrace();
+            return responseExceptionVo;
+        }
     }
 }

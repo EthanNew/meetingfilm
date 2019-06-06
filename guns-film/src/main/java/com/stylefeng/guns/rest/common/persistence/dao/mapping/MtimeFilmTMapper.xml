@@ -19,4 +19,28 @@
         <result column="film_status" property="filmStatus" />
     </resultMap>
 
+
+    <resultMap id="FilmBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.FilmBo">
+        <id column="hfiuuid" property="filmId" />
+        <result column="film_name" property="filmName" />
+        <result column="film_language" property="filmType" />
+        <result column="film_length" property="filmLength" />
+        <result column="film_cats" property="filmCats" />
+        <result column="actors" property="actors" />
+        <result column="img_address" property="imgAddress" />
+        <collection property="filmFields" ofType="com.stylefeng.guns.rest.model.cinema.bo.FieldBo">
+            <id column="fuuid" property="fieldId" />
+            <result column="begin_time" property="beginTime" />
+            <result column="end_time" property="endTime" />
+            <result column="film_language" property="language" />
+            <result column="hall_name" property="hallName" />
+            <result column="price" property="price" />
+        </collection>
+    </resultMap>
+
+    <select id="getFilmList" resultMap="FilmBoMap">
+        SELECT hfi.`UUID` hfiuuid, hfi.film_name, hfi.film_language, hfi.film_length, hfi.film_cats, hfi.actors,
+               hfi.img_address, f.`UUID` fuuid, f.begin_time, f.end_time, f.hall_name, f.price
+        FROM mtime_hall_film_info_t hfi INNER JOIN mtime_field_t f ON hfi.film_id = f.film_id
+    </select>
 </mapper>

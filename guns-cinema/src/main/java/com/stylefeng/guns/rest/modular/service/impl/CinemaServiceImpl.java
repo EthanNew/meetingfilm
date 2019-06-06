@@ -101,11 +101,6 @@ public class CinemaServiceImpl implements CinemaService {
         return cinemaInfoBo;
     }
 
-    @Override
-    public FieldBo getFieldByfieldId(int fieldId) {
-        FieldBo fieldByfieldId = fieldTMapper.getFieldByfieldId(fieldId);
-        return fieldByfieldId;
-    }
 
     @Override
     public FilmBo getFilmByfieldId(int fieldId) {
