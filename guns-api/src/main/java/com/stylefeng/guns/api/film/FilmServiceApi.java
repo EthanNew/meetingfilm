@@ -32,5 +32,4 @@ public interface FilmServiceApi {
      * @return
      */
     List<FilmBo> getFilmList();
-
 }
