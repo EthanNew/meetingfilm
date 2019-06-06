@@ -27,13 +27,10 @@ public interface FilmServiceApi {
     //获取top100
     List<FilmInfo> getTop();
 
-<<<<<<< HEAD
-=======
     /**
      * 获取影片列表
      * @return
      */
     List<FilmBo> getFilmList();
->>>>>>> 572f024a73002c19b3a6ed05beb85f2177f44bd0
 
 }

@@ -56,7 +56,7 @@ public class AuthFilter extends OncePerRequestFilter {
 //                boolean flag = jwtTokenUtil.isTokenExpired(authToken);
                 String s = jedis.get(jwtTokenUtil.getUsernameFromToken(authToken));
 
-                if (flag) {
+                if (s == null) {
                     RenderUtil.renderJson(response, new ErrorTip(BizExceptionEnum.TOKEN_EXPIRED.getCode(), BizExceptionEnum.TOKEN_EXPIRED.getMessage()));
                     return;
                 }
