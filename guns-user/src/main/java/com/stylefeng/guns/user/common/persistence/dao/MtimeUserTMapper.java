@@ -1,9 +1,10 @@
 package com.stylefeng.guns.user.common.persistence.dao;
 
-import com.stylefeng.guns.user.common.persistence.VO.MTimeUserVO;
+import com.stylefeng.guns.user.BO.UserInfoBO;
+import com.stylefeng.guns.user.VO.UserRegistVO;
+import com.stylefeng.guns.user.VO.UserUpdateVO;
 import com.stylefeng.guns.user.common.persistence.model.MtimeUserT;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.stylefeng.guns.user.modular.auth.controller.dto.AuthRequest;
 import org.apache.ibatis.annotations.Param;
 
 /**
@@ -16,13 +17,15 @@ import org.apache.ibatis.annotations.Param;
  */
 public interface MtimeUserTMapper extends BaseMapper<MtimeUserT> {
 
-    MTimeUserVO checkUsername(@Param("username") String username);
+    int checkUsername(@Param("username") String username);
 
-    int insertMtimeUserVO(@Param("user") MTimeUserVO mTimeUserVO);
+    int insertMtimeUser(@Param("user") UserRegistVO userRegistVO);
 
-    MTimeUserVO login(@Param("authRequest") AuthRequest authRequest);
+    UserInfoBO getUserInfoByName(@Param("username") String username);
 
-    int updateUserInfo(@Param("user") MTimeUserVO mTimeUserVO);
+    int login(@Param("username") String username,@Param("password") String password);
 
-    MTimeUserVO selectMTimeUserVOById(@Param("uuid") Integer uuid);
+    int updateUserInfo(@Param("user") UserUpdateVO userUpdateVO);
+
+    UserInfoBO getUserInfoById(@Param("uuid") Integer uuid);
 }

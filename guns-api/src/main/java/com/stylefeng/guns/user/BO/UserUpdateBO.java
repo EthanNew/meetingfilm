@@ -1,15 +1,15 @@
-package com.stylefeng.guns.user.common.persistence.VO;
+package com.stylefeng.guns.user.BO;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class MTimeUserVO {
+public class UserUpdateBO implements Serializable {
+
 
     Integer UUID;
     //INT PRIMARY KEY AUTO_INCREMENT COMMENT '主键编号',
     String username;
     //VARCHAR(50) COMMENT '用户账号',
-    String password;
-    // VARCHAR(50) COMMENT '用户密码',
     String nickname;
     // VARCHAR(50) COMMENT '用户昵称',
     Integer sex ;
@@ -34,26 +34,6 @@ public class MTimeUserVO {
     //TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间'
 
 
-    @Override
-    public String toString() {
-        return "MTimeUser{" +
-                "UUID=" + UUID +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", sex=" + sex +
-                ", birthday=" + birthday +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", address='" + address + '\'' +
-                ", headUrl='" + headUrl + '\'' +
-                ", biography='" + biography + '\'' +
-                ", lifeState=" + lifeState +
-                ", beginTime=" + beginTime +
-                ", updateTime=" + updateTime +
-                '}';
-    }
-
     public Integer getUUID() {
         return UUID;
     }
@@ -68,14 +48,6 @@ public class MTimeUserVO {
 
     public void setUsername(String username) {
         this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getNickname() {
