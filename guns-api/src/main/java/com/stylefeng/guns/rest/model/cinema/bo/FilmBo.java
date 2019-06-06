@@ -1,12 +1,10 @@
 package com.stylefeng.guns.rest.model.cinema.bo;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @Author: Ethan New
@@ -26,5 +24,5 @@ public class FilmBo implements Serializable {
     private String filmCats;
     private String actors;
     private String imgAddress;
-    private FieldBo filmFields;
+    private List<FilmBo> filmFields;
 }
