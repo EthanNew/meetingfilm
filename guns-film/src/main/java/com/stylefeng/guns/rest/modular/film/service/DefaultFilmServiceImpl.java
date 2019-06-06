@@ -12,6 +12,7 @@ import com.stylefeng.guns.rest.common.persistence.dao.MtimeBannerTMapper;
 import com.stylefeng.guns.rest.common.persistence.dao.MtimeFilmTMapper;
 import com.stylefeng.guns.rest.common.persistence.model.MtimeBannerT;
 import com.stylefeng.guns.rest.common.persistence.model.MtimeFilmT;
+import com.stylefeng.guns.rest.model.cinema.bo.FilmBo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -134,4 +135,10 @@ public class DefaultFilmServiceImpl implements FilmServiceApi {
 
         return filmInfos;
     }
+    @Override
+    public List<FilmBo> getFilmList() {
+        List<FilmBo> filmBos = mtimeFilmTMapper.getFilmList();
+        return filmBos;
+    }
+
 }

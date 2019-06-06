@@ -17,7 +17,8 @@
 
     <select id="getAreaList" resultMap="AreaBoMap">
         SELECT a.`UUID`, a.`show_name`, c.area_id is_active
-        FROM mtime_area_dict_t a LEFT JOIN mtime_cinema_t c ON c.area_id = a.`UUID`
+        FROM mtime_area_dict_t a
+        LEFT JOIN mtime_cinema_t c ON c.area_id = a.`UUID`
         <where>
             <if test="areaId != 99">
                 AND c.area_id = #{areaId}

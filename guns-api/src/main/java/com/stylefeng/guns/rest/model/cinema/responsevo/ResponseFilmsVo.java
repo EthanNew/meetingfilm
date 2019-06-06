@@ -7,7 +7,7 @@ import lombok.Setter;
 
 /**
  * @Author: Ethan New
- * @Date: 2019/6/4 22:08
+ * @Date: 2019/6/5 19:49
  * @Description:
  */
 
@@ -15,11 +15,12 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseConditionVo<T> {
+public class ResponseFilmsVo<T> {
     private Integer status;
+    private String imgPre;
     private T data;
 
-    public ResponseConditionVo(int i, T map) {
+    public ResponseFilmsVo(int i, String imgPre, T map) {
 
     }
 }

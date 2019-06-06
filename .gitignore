@@ -21,6 +21,7 @@ logs/
 *.zip
 *.tar.gz
 *.rar
+*.gz
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -33,7 +34,10 @@ hs_err_pid*
 .settings/
 
 
-/.idea/
+.idea/
 .README.md
+<<<<<<< HEAD
 .gitattributes
-
+=======
+.gitattributes
+>>>>>>> 572f024a73002c19b3a6ed05beb85f2177f44bd0
