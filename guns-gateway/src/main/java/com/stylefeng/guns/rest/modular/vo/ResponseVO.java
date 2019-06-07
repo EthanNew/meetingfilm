@@ -8,8 +8,21 @@ public class ResponseVO<M> {
     private String msg;
     private M data;
     private String imgPre;
+    private int nowPage;
+    private int totalPage;
 
     private ResponseVO() {
+    }
+
+    public static<M> ResponseVO success(int nowPage,int totalPage,String imgPre,M m){
+        ResponseVO responseVO = new ResponseVO();
+        responseVO.setStatus(0);
+        responseVO.setData(m);
+        responseVO.setImgPre(imgPre);
+        responseVO.setTotalPage(totalPage);
+        responseVO.setNowPage(nowPage);
+
+        return responseVO;
     }
 
     public static<M> ResponseVO success(String imgPre, M m){
