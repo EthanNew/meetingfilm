@@ -97,8 +97,8 @@ public class MtimeUserTController {
     }
 
     @PostMapping("/auth")
-    public ResponseResult userLogin(@RequestBody @Valid AuthRequest authRequest) {
-        String username = authRequest.getUsername();
+    public ResponseResult userLogin(@Valid AuthRequest authRequest) {
+        String username = authRequest.getUserName();
         boolean validate = MtimeUserTService.login(username,authRequest.getPassword());
         if (validate) {
             final String randomKey = jwtTokenUtil.getRandomKey();

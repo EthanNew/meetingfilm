@@ -43,4 +43,46 @@
                hfi.img_address, f.`UUID` fuuid, f.begin_time, f.end_time, f.hall_name, f.price
         FROM mtime_hall_film_info_t hfi INNER JOIN mtime_field_t f ON hfi.film_id = f.film_id
     </select>
+
+
+
+
+    <select id="getFilmDetailByName" resultType="com.stylefeng.guns.api.film.vo.FilmDetailVO">
+         SELECT
+                film.uuid AS filmId,
+                film.film_name AS filmName,
+                info.`film_en_name` AS filmEnName,
+                film.`img_address` AS imgAddress,
+                info.`film_score` AS score,
+                info.`film_score_num` AS scoreNum,
+                film.`film_box_office` AS totalBox,
+                (SELECT GROUP_CONCAT(show_name SEPARATOR ',') FROM mtime_cat_dict_t t
+                  WHERE FIND_IN_SET (t.uuid,
+                    (SELECT REPLACE(TRIM(BOTH '#' FROM film_cats),'#',',') FROM mtime_film_t t WHERE t.uuid=film.uuid))) AS info01,
+                CONCAT((SELECT show_name FROM mtime_source_dict_t t WHERE t.uuid=film.uuid),' / ',info.`film_length`,'分钟') info02,
+                CONCAT(film.`film_time`,(SELECT show_name FROM mtime_source_dict_t t WHERE t.uuid=film.uuid),'上映') info03
+          FROM mtime_film_t film,mtime_film_info_t info
+          WHERE film.`UUID` = info.`film_id`
+          AND film.film_name LIKE #{filmName}
+    </select>
+
+    <select id="getFilmDetailById" resultType="com.stylefeng.guns.api.film.vo.FilmDetailVO">
+
+          SELECT
+                film.uuid AS filmId,
+                film.film_name AS filmName,
+                info.`film_en_name` AS filmEnName,
+                film.`img_address` AS imgAddress,
+                info.`film_score` AS score,
+                info.`film_score_num` AS scoreNum,
+                film.`film_box_office` AS totalBox,
+                (SELECT GROUP_CONCAT(show_name SEPARATOR ',') FROM mtime_cat_dict_t t
+                  WHERE FIND_IN_SET (t.uuid,
+                    (SELECT REPLACE(TRIM(BOTH '#' FROM film_cats),'#',',') FROM mtime_film_t t WHERE t.uuid=film.uuid))) AS info01,
+                CONCAT((SELECT show_name FROM mtime_source_dict_t t WHERE t.uuid=film.uuid),' / ',info.`film_length`,'分钟') info02,
+                CONCAT(film.`film_time`,(SELECT show_name FROM mtime_source_dict_t t WHERE t.uuid=film.uuid),'上映') info03
+          FROM mtime_film_t film,mtime_film_info_t info
+          WHERE film.`UUID` = info.`film_id`
+          AND film.`UUID` = #{uuid}
+    </select>
 </mapper>
