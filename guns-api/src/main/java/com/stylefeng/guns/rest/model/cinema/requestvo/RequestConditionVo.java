@@ -1,5 +1,10 @@
 package com.stylefeng.guns.rest.model.cinema.requestvo;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.io.Serializable;
 
 /**
@@ -8,41 +13,12 @@ import java.io.Serializable;
  * @Description:
  */
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class RequestConditionVo implements Serializable {
-    private Integer brandId = 99;
-    private Integer hallType = 99;
-    private Integer areaId = 99;
-
-    public RequestConditionVo() {
-    }
-
-    public RequestConditionVo(Integer brandId, Integer hallType, Integer areaId) {
-        this.brandId = brandId;
-        this.hallType = hallType;
-        this.areaId = areaId;
-    }
-
-    public Integer getBrandId() {
-        return brandId;
-    }
-
-    public void setBrandId(Integer brandId) {
-        this.brandId = brandId;
-    }
-
-    public Integer getHallType() {
-        return hallType;
-    }
-
-    public void setHallType(Integer hallType) {
-        this.hallType = hallType;
-    }
-
-    public Integer getAreaId() {
-        return areaId;
-    }
-
-    public void setAreaId(Integer areaId) {
-        this.areaId = areaId;
-    }
+    private Integer brandId;
+    private Integer hallType;
+    private Integer areaId;
 }

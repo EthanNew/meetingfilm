@@ -33,8 +33,8 @@
             <if test="hallType != 99">
                 AND hall_ids LIKE concat("%#", #{hallType}, "#%")
             </if>
-            <if test="districtId != 99">
-                AND area_id = #{districtId}
+            <if test="areaId != 99">
+                AND area_id = #{areaId}
             </if>
         </where>
     </select>
@@ -48,8 +48,8 @@
             <if test="hallType != 99">
                 AND hall_ids LIKE concat("%#", #{hallType}, "#%")
             </if>
-            <if test="districtId != 99">
-                AND area_id = #{districtId}
+            <if test="areaId != 99">
+                AND area_id = #{areaId}
             </if>
         </where>
     </select>

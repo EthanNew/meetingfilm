@@ -101,7 +101,8 @@ public class CinemaController {
      * @return
      */
     @PostMapping("/getFieldInfo")
-    public Object getFieldInfo(int fieldId, int cinemaId){
+    public Object getFieldInfo(@RequestParam(value = "fieldId", defaultValue = "99") int fieldId,
+                               @RequestParam(value = "cinemaId", defaultValue = "99") int cinemaId){
         /*FieldBo fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
         return null;*/
         try {

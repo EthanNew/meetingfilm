@@ -20,7 +20,6 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 public class FieldBo implements Serializable {
-
     private Integer fieldId;
     private String beginTime;
     private String endTime;

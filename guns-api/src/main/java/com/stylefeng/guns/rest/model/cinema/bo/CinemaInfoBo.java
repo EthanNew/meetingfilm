@@ -23,12 +23,4 @@ public class CinemaInfoBo implements Serializable {
     private String cinemaPhone;
     private String imgUrl;
     private String cinemaAddress;
-
-    public String getImgUrl() {
-        return cinemaName;
-    }
-
-    public void setImgUrl(String imgUrl) {
-        this.cinemaName = imgUrl;
-    }
 }
