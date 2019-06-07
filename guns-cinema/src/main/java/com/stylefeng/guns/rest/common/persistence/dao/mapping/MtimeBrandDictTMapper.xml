@@ -8,7 +8,7 @@
         <result column="show_name" property="showName" />
     </resultMap>
 
-    <resultMap id="BrandBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.BrandBo">
+    <resultMap id="BrandBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.BrandBO">
         <id column="UUID" property="brandId" />
         <result column="show_name" property="brandName" />
         <result column="is_active" property="isActive" />

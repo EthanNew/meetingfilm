@@ -1,8 +1,7 @@
 package com.stylefeng.guns.rest.modular.cinema;
 
-import com.stylefeng.guns.api.film.vo.FilmInfo;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
-import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
+import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVO;
 
 import java.util.List;
 
@@ -18,49 +17,49 @@ public interface CinemaService {
      * @param requestCinemasVo
      * @return
      */
-    List<CinemaBo> getPageCinemas(RequestCinemasVo requestCinemasVo);
+    List<CinemaBO> getPageCinemas(RequestCinemasVO requestCinemasVo);
 
     /**
      * 根据条件查询所有影院的总页数
      * @param requestCinemasVo
      * @return
      */
-    int getTotalPage(RequestCinemasVo requestCinemasVo);
+    int getTotalPage(RequestCinemasVO requestCinemasVo);
 
     /**
      * 获取影院列表查询条件之影院条件
      * @param brandId
      * @return
      */
-    List<BrandBo> getBrandList(int brandId);
+    List<BrandBO> getBrandList(int brandId);
 
     /**
      * 获取影院列表查询条件之影厅条件
      * @param areaId
      * @return
      */
-    List<AreaBo> getAreaList(int areaId);
+    List<AreaBO> getAreaList(int areaId);
 
     /**
      * 获取影院列表查询条件之行政区条件
      * @param hallType
      * @return
      */
-    List<HallTypeBo> getHallTypeList(int hallType);
+    List<HallTypeBO> getHallTypeList(int hallType);
 
     /**
      * 获取影院信息
      * @param cinemaId
      * @return
      */
-    CinemaInfoBo getCinemaInfo(int cinemaId);
+    CinemaInfoBO getCinemaInfo(int cinemaId);
 
     /**
      *  根据放映场次查询播放的电影编号，然后根据电影编号获取对应的电影信息
      * @param fieldId
      * @return
      */
-     FilmInfoBo getFilmByfieldId(int fieldId);
+     FilmInfoBO getFilmByfieldId(int fieldId);
 
 
 

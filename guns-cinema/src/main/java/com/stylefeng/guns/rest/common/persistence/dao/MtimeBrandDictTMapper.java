@@ -2,7 +2,7 @@ package com.stylefeng.guns.rest.common.persistence.dao;
 
 import com.stylefeng.guns.rest.common.persistence.model.MtimeBrandDictT;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.stylefeng.guns.rest.model.cinema.bo.BrandBo;
+import com.stylefeng.guns.rest.model.cinema.bo.BrandBO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -25,5 +25,5 @@ public interface MtimeBrandDictTMapper extends BaseMapper<MtimeBrandDictT> {
      * @param brandId
      * @return
      */
-    List<BrandBo> getBrandList(@Param("brandId") int brandId);
+    List<BrandBO> getBrandList(@Param("brandId") int brandId);
 }

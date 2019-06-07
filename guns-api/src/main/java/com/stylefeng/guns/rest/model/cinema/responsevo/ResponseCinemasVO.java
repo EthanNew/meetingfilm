@@ -15,7 +15,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseCinemasVo<T> {
+public class ResponseCinemasVO<T> {
     private Integer status;
     private Integer nowPage;
     private Integer totalPage;

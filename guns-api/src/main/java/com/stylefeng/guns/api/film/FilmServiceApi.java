@@ -1,7 +1,7 @@
 package com.stylefeng.guns.api.film;
 
 import com.stylefeng.guns.api.film.vo.*;
-import com.stylefeng.guns.rest.model.cinema.bo.FilmBo;
+import com.stylefeng.guns.rest.model.cinema.bo.FilmBO;
 
 
 import java.util.List;
@@ -32,7 +32,7 @@ public interface FilmServiceApi {
      * 获取影片列表
      * @return
      */
-    List<FilmBo> getFilmList();
+    List<FilmBO> getFilmList();
 
 
 

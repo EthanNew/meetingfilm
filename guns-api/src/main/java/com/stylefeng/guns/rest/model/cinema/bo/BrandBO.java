@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BrandBo implements Serializable {
+public class BrandBO implements Serializable {
     private Integer brandId;
     private String brandName;
     private boolean isActive;

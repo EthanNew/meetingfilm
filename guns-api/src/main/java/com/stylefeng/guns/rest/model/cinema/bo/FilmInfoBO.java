@@ -6,10 +6,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @Author: Ethan New
- * @Date: 2019/6/4 20:46
+ * @Date: 2019/6/6 23:08
  * @Description:
  */
 
@@ -17,9 +18,11 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CinemaBo implements Serializable {
-    private Integer uuid;
-    private String cinemaName;
-    private String address;
-    private Integer minimumPrice;
+public class FilmInfoBO implements Serializable {
+    private Integer filmId;
+    private String filmName;
+    private String filmLength;
+    private String filmType;
+    private String filmCats;
+    private String imgAddress;
 }

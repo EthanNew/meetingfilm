@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class CinemaInfoBo implements Serializable {
+public class CinemaInfoBO implements Serializable {
     private Integer cinemaId;
     private String cinemaName;
     private String cinemaPhone;

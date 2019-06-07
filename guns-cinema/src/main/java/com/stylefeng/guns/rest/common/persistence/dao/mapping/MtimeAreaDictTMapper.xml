@@ -9,7 +9,7 @@
     </resultMap>
 
 
-    <resultMap id="AreaBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.AreaBo">
+    <resultMap id="AreaBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.AreaBO">
         <id column="UUID" property="areaId" />
         <result column="show_name" property="areaName" />
         <result column="is_active" property="isActive" />

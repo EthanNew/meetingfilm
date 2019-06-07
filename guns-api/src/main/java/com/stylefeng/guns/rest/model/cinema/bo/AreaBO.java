@@ -7,23 +7,18 @@ import lombok.Setter;
 
 import java.io.Serializable;
 
-
 /**
  * @Author: Ethan New
- * @Date: 2019/6/5 18:01
+ * @Date: 2019/6/4 22:57
  * @Description:
  */
-
 
 @Setter
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class FieldBo implements Serializable {
-    private Integer fieldId;
-    private String beginTime;
-    private String endTime;
-    private String language;
-    private String hallName;
-    private Integer price;
+public class AreaBO implements Serializable {
+    private Integer areaId;
+    private String areaName;
+    private boolean isActive;
 }

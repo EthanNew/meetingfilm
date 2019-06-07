@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  * @Author: Ethan New
- * @Date: 2019/6/4 22:25
+ * @Date: 2019/6/4 19:29
  * @Description:
  */
 
@@ -17,8 +17,10 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RequestConditionVo implements Serializable {
+public class RequestCinemasVO implements Serializable {
     private Integer brandId;
     private Integer hallType;
     private Integer areaId;
+    private Integer pageSize;
+    private Integer nowPage;
 }

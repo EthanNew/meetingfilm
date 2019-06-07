@@ -3,7 +3,7 @@ package com.stylefeng.guns.rest.common.persistence.dao;
 import com.stylefeng.guns.api.film.vo.FilmDetailVO;
 import com.stylefeng.guns.rest.common.persistence.model.MtimeFilmT;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.stylefeng.guns.rest.model.cinema.bo.FilmBo;
+import com.stylefeng.guns.rest.model.cinema.bo.FilmBO;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -19,7 +19,7 @@ import java.util.List;
  */
 public interface MtimeFilmTMapper extends BaseMapper<MtimeFilmT> {
 
-    List<FilmBo> getFilmList();
+    List<FilmBO> getFilmList();
 
     FilmDetailVO getFilmDetailByName(@Param("filmName") String filmName);
 

@@ -2,14 +2,13 @@ package com.stylefeng.guns.rest.modular.cinema;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.stylefeng.guns.api.film.FilmServiceApi;
-import com.stylefeng.guns.api.film.vo.FilmInfo;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
-import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
-import com.stylefeng.guns.rest.model.cinema.requestvo.RequestConditionVo;
-import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseCinemasVo;
-import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseConditionVo;
-import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseExceptionVo;
-import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseFilmsVo;
+import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVO;
+import com.stylefeng.guns.rest.model.cinema.requestvo.RequestConditionVO;
+import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseCinemasVO;
+import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseConditionVO;
+import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseExceptionVO;
+import com.stylefeng.guns.rest.model.cinema.responsevo.ResponseFilmsVO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -36,14 +35,14 @@ public class CinemaController {
      * @param requestCinemasVo
      */
     @GetMapping("/getCinemas")
-    public Object getCinemas(RequestCinemasVo requestCinemasVo) {
+    public Object getCinemas(RequestCinemasVO requestCinemasVo) {
         try {
-            List<CinemaBo> list = cinemaService.getPageCinemas(requestCinemasVo);
+            List<CinemaBO> list = cinemaService.getPageCinemas(requestCinemasVo);
             int totalPage = cinemaService.getTotalPage(requestCinemasVo);
-            ResponseCinemasVo<List<CinemaBo>> listResponseCinemasVo = new ResponseCinemasVo<>(0, requestCinemasVo.getNowPage(), totalPage, list);
+            ResponseCinemasVO<List<CinemaBO>> listResponseCinemasVo = new ResponseCinemasVO<>(0, requestCinemasVo.getNowPage(), totalPage, list);
             return listResponseCinemasVo;
         } catch (Exception e) {
-            ResponseExceptionVo responseExceptionVo = new ResponseExceptionVo(1, "影院信息查询失败");
+            ResponseExceptionVO responseExceptionVo = new ResponseExceptionVO(1, "影院信息查询失败");
             e.printStackTrace();
             return responseExceptionVo;
         }
@@ -55,19 +54,19 @@ public class CinemaController {
      * @return
      */
     @GetMapping("/getCondition")
-    public Object getCondition(RequestConditionVo requestConditionVo) {
+    public Object getCondition(RequestConditionVO requestConditionVo) {
         try {
-            List<BrandBo> brandList = cinemaService.getBrandList(requestConditionVo.getBrandId());
-            List<AreaBo> areaList = cinemaService.getAreaList(requestConditionVo.getAreaId());
-            List<HallTypeBo> halltypeList = cinemaService.getHallTypeList(requestConditionVo.getHallType());
+            List<BrandBO> brandList = cinemaService.getBrandList(requestConditionVo.getBrandId());
+            List<AreaBO> areaList = cinemaService.getAreaList(requestConditionVo.getAreaId());
+            List<HallTypeBO> halltypeList = cinemaService.getHallTypeList(requestConditionVo.getHallType());
             Map<String, Object> map = new HashMap<>(16);
             map.put("brandList", brandList);
             map.put("areaList", areaList);
             map.put("halltypeList", halltypeList);
-            ResponseConditionVo<Map<String, Object>> responseConditionVo = new ResponseConditionVo<>(0, map);
+            ResponseConditionVO<Map<String, Object>> responseConditionVo = new ResponseConditionVO<>(0, map);
             return responseConditionVo;
         } catch (Exception e) {
-            ResponseExceptionVo responseExceptionVo = new ResponseExceptionVo(1, "影院信息查询失败");
+            ResponseExceptionVO responseExceptionVo = new ResponseExceptionVO(1, "影院信息查询失败");
             e.printStackTrace();
             return responseExceptionVo;
         }
@@ -79,18 +78,18 @@ public class CinemaController {
      * @return
      */
     @RequestMapping(value = "/getFields", method = {RequestMethod.GET, RequestMethod.POST})
-    public Object getFields(int cinemaId) {
+    public Object getFields(@RequestParam("cinemaId") int cinemaId) {
         try {
-            CinemaInfoBo cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
-            List<FilmBo> filmBos = filmService.getFilmList();
+            CinemaInfoBO cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
+            List<FilmBO> filmBos = filmService.getFilmList();
             String imgPre = cinemaInfoBo.getImgUrl();
             Map<String, Object> map = new HashMap<>(16);
             map.put("cinemaInfo", cinemaInfoBo);
             map.put("filmList", filmBos);
-            ResponseFilmsVo<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVo<>(0, imgPre, map);
+            ResponseFilmsVO<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVO<>(0, imgPre, map);
             return mapResponseFilmsVo;
         } catch (Exception e) {
-            ResponseExceptionVo responseExceptionVo = new ResponseExceptionVo(1, "影院信息查询失败");
+            ResponseExceptionVO responseExceptionVo = new ResponseExceptionVO(1, "影院信息查询失败");
             e.printStackTrace();
             return responseExceptionVo;
         }
@@ -103,20 +102,20 @@ public class CinemaController {
     @PostMapping("/getFieldInfo")
     public Object getFieldInfo(@RequestParam(value = "fieldId", defaultValue = "99") int fieldId,
                                @RequestParam(value = "cinemaId", defaultValue = "99") int cinemaId){
-        /*FieldBo fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
+        /*FieldBO fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
         return null;*/
         try {
-             CinemaInfoBo cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
-             FilmInfoBo filmByfieldId = cinemaService.getFilmByfieldId(fieldId);
-             List<FilmBo> filmBos = filmService.getFilmList();
+             CinemaInfoBO cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
+             FilmInfoBO filmByfieldId = cinemaService.getFilmByfieldId(fieldId);
+             List<FilmBO> filmBos = filmService.getFilmList();
              String imgPre = cinemaInfoBo.getImgUrl();
              Map<String, Object> map = new HashMap<>(16);
              map.put("cinemaInfo", cinemaInfoBo);
              map.put("filmList", filmByfieldId );
-             ResponseFilmsVo<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVo<>(0, imgPre, map);
+             ResponseFilmsVO<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVO<>(0, imgPre, map);
              return mapResponseFilmsVo;
         } catch (Exception e) {
-            ResponseExceptionVo responseExceptionVo = new ResponseExceptionVo(1, "影院信息查询失败");
+            ResponseExceptionVO responseExceptionVo = new ResponseExceptionVO(1, "影院信息查询失败");
             e.printStackTrace();
             return responseExceptionVo;
         }

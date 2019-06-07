@@ -17,7 +17,7 @@ import java.io.Serializable;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class HallTypeBo implements Serializable {
+public class HallTypeBO implements Serializable {
     private Integer halltypeId;
     private String halltypeName;
     private boolean isActive;

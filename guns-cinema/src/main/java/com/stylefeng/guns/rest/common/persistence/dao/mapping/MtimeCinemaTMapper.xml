@@ -16,7 +16,7 @@
     </resultMap>
 
 
-    <resultMap id="CinemaMap" type="com.stylefeng.guns.rest.model.cinema.bo.CinemaBo">
+    <resultMap id="CinemaMap" type="com.stylefeng.guns.rest.model.cinema.bo.CinemaBO">
         <id column="UUID" property="uuid" />
         <result column="cinema_name" property="cinemaName" />
         <result column="cinema_address" property="address" />
@@ -54,7 +54,7 @@
         </where>
     </select>
 
-    <resultMap id="CinemaInfoMap" type="com.stylefeng.guns.rest.model.cinema.bo.CinemaInfoBo">
+    <resultMap id="CinemaInfoMap" type="com.stylefeng.guns.rest.model.cinema.bo.CinemaInfoBO">
         <id column="UUID" property="cinemaId" />
         <result column="cinema_name" property="cinemaName" />
         <result column="cinema_phone" property="cinemaPhone" />

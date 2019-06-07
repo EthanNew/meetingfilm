@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @Description:
  */
 
-public class HallBo implements Serializable {
+public class HallBO implements Serializable {
      private int hallId;
      private String showName;
      private String seatAddress;
@@ -16,7 +16,7 @@ public class HallBo implements Serializable {
 
     @Override
     public String toString() {
-        return "HallBo{" +
+        return "HallBO{" +
                 "hallId=" + hallId +
                 ", showName='" + showName + '\'' +
                 ", seatAddress='" + seatAddress + '\'' +

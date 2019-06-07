@@ -2,11 +2,9 @@ package com.stylefeng.guns.rest.modular.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
 import com.baomidou.mybatisplus.plugins.pagination.PageHelper;
-import com.stylefeng.guns.api.film.vo.FilmInfo;
 import com.stylefeng.guns.rest.common.persistence.dao.*;
-import com.stylefeng.guns.rest.common.persistence.model.MtimeBrandDictT;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
-import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
+import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVO;
 import com.stylefeng.guns.rest.modular.cinema.CinemaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -40,9 +38,9 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public List<CinemaBo> getPageCinemas(RequestCinemasVo requestCinemasVo) {
+    public List<CinemaBO> getPageCinemas(RequestCinemasVO requestCinemasVo) {
         PageHelper.startPage(requestCinemasVo.getNowPage(), requestCinemasVo.getPageSize());
-        List<CinemaBo> cinemaBos = cinemaMapper.getPageCinemas(requestCinemasVo);
+        List<CinemaBO> cinemaBos = cinemaMapper.getPageCinemas(requestCinemasVo);
         return cinemaBos;
     }
 
@@ -52,7 +50,7 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public int getTotalPage(RequestCinemasVo requestCinemasVo) {
+    public int getTotalPage(RequestCinemasVO requestCinemasVo) {
         int total = cinemaMapper.getTotalPage(requestCinemasVo);
         int pageTotal = (int) Math.ceil(1.0 * total / requestCinemasVo.getPageSize());
         return pageTotal;
@@ -64,8 +62,8 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public List<BrandBo> getBrandList(int brandId) {
-        List<BrandBo> brandBos = brandMapper.getBrandList(brandId);
+    public List<BrandBO> getBrandList(int brandId) {
+        List<BrandBO> brandBos = brandMapper.getBrandList(brandId);
         return brandBos;
     }
 
@@ -75,8 +73,8 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public List<AreaBo> getAreaList(int areaId) {
-        List<AreaBo> areaBos = areaMapper.getAreaList(areaId);
+    public List<AreaBO> getAreaList(int areaId) {
+        List<AreaBO> areaBos = areaMapper.getAreaList(areaId);
         return areaBos;
     }
 
@@ -86,8 +84,8 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public List<HallTypeBo> getHallTypeList(int hallType) {
-        List<HallTypeBo> hallTypeBos = hallMapper.getHallTypeList(hallType);
+    public List<HallTypeBO> getHallTypeList(int hallType) {
+        List<HallTypeBO> hallTypeBos = hallMapper.getHallTypeList(hallType);
         return hallTypeBos;
     }
 
@@ -97,15 +95,15 @@ public class CinemaServiceImpl implements CinemaService {
      * @return
      */
     @Override
-    public CinemaInfoBo getCinemaInfo(int cinemaId) {
-        CinemaInfoBo cinemaInfoBo = cinemaMapper.getCinemaInfo(cinemaId);
+    public CinemaInfoBO getCinemaInfo(int cinemaId) {
+        CinemaInfoBO cinemaInfoBo = cinemaMapper.getCinemaInfo(cinemaId);
         return cinemaInfoBo;
     }
 
 
     @Override
-    public FilmInfoBo getFilmByfieldId(int fieldId) {
-        FilmInfoBo filmByfieId = fieldTMapper.getFilmByfieId(fieldId);
+    public FilmInfoBO getFilmByfieldId(int fieldId) {
+        FilmInfoBO filmByfieId = fieldTMapper.getFilmByfieId(fieldId);
         return filmByfieId;
     }
 }

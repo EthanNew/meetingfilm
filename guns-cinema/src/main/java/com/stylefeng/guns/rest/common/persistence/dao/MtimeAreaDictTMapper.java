@@ -2,7 +2,7 @@ package com.stylefeng.guns.rest.common.persistence.dao;
 
 import com.stylefeng.guns.rest.common.persistence.model.MtimeAreaDictT;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.stylefeng.guns.rest.model.cinema.bo.AreaBo;
+import com.stylefeng.guns.rest.model.cinema.bo.AreaBO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -25,5 +25,5 @@ public interface MtimeAreaDictTMapper extends BaseMapper<MtimeAreaDictT> {
      * @param areaId
      * @return
      */
-    List<AreaBo> getAreaList(@Param("areaId") int areaId);
+    List<AreaBO> getAreaList(@Param("areaId") int areaId);
 }

@@ -7,7 +7,7 @@ import lombok.Setter;
 
 /**
  * @Author: Ethan New
- * @Date: 2019/6/4 19:26
+ * @Date: 2019/6/5 19:49
  * @Description:
  */
 
@@ -15,7 +15,8 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseExceptionVo {
+public class ResponseFilmsVO<T> {
     private Integer status;
-    private String msg;
+    private String imgPre;
+    private T data;
 }

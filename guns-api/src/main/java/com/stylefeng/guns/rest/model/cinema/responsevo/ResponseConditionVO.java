@@ -15,7 +15,7 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResponseConditionVo<T> {
+public class ResponseConditionVO<T> {
     private Integer status;
     private T data;
 }

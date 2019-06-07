@@ -20,7 +20,7 @@
     </resultMap>
 
 
-    <resultMap id="FilmBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.FilmBo">
+    <resultMap id="FilmBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.FilmBO">
         <id column="hfiuuid" property="filmId" />
         <result column="film_name" property="filmName" />
         <result column="film_language" property="filmType" />
@@ -28,7 +28,7 @@
         <result column="film_cats" property="filmCats" />
         <result column="actors" property="actors" />
         <result column="img_address" property="imgAddress" />
-        <collection property="filmFields" ofType="com.stylefeng.guns.rest.model.cinema.bo.FieldBo">
+        <collection property="filmFields" ofType="com.stylefeng.guns.rest.model.cinema.bo.FieldBO">
             <id column="fuuid" property="fieldId" />
             <result column="begin_time" property="beginTime" />
             <result column="end_time" property="endTime" />

@@ -15,7 +15,7 @@
     </resultMap>
 
 
-    <resultMap id="FilmResultMap" type="com.stylefeng.guns.rest.model.cinema.bo.FilmInfoBo">
+    <resultMap id="FilmResultMap" type="com.stylefeng.guns.rest.model.cinema.bo.FilmInfoBO">
         <result column="film_id" property="filmId" />
         <result column="film_name" property="filmName"/>
         <result column="film_length" property="filmLength" />

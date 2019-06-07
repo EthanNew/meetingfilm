@@ -2,9 +2,9 @@ package com.stylefeng.guns.rest.common.persistence.dao;
 
 import com.stylefeng.guns.rest.common.persistence.model.MtimeCinemaT;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.stylefeng.guns.rest.model.cinema.bo.CinemaBo;
-import com.stylefeng.guns.rest.model.cinema.bo.CinemaInfoBo;
-import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVo;
+import com.stylefeng.guns.rest.model.cinema.bo.CinemaBO;
+import com.stylefeng.guns.rest.model.cinema.bo.CinemaInfoBO;
+import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVO;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -26,19 +26,19 @@ public interface MtimeCinemaTMapper extends BaseMapper<MtimeCinemaT> {
      * @param requestCinemasVo
      * @return
      */
-    List<CinemaBo> getPageCinemas(RequestCinemasVo requestCinemasVo);
+    List<CinemaBO> getPageCinemas(RequestCinemasVO requestCinemasVo);
 
     /**
      * 根据条件查询所有影院的总页数
      * @param requestCinemasVo
      * @return
      */
-    int getTotalPage(RequestCinemasVo requestCinemasVo);
+    int getTotalPage(RequestCinemasVO requestCinemasVo);
 
     /**
      * 获取影院信息
      * @param cinemaId
      * @return
      */
-    CinemaInfoBo getCinemaInfo(int cinemaId);
+    CinemaInfoBO getCinemaInfo(int cinemaId);
 }

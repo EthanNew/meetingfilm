@@ -10,7 +10,7 @@
     </resultMap>
 
 
-    <resultMap id="HallTypeBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.HallTypeBo">
+    <resultMap id="HallTypeBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.HallTypeBO">
         <id column="UUID" property="halltypeId" />
         <result column="show_name" property="halltypeName" />
         <result column="is_active" property="isActive" />
