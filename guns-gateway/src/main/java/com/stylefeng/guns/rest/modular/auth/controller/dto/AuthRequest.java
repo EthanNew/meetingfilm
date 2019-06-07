@@ -2,6 +2,8 @@ package com.stylefeng.guns.rest.modular.auth.controller.dto;
 
 import com.stylefeng.guns.rest.modular.auth.validator.dto.Credence;
 
+import javax.validation.constraints.NotEmpty;
+
 /**
  * 认证的请求dto
  *
@@ -9,8 +11,9 @@ import com.stylefeng.guns.rest.modular.auth.validator.dto.Credence;
  * @Date 2017/8/24 14:00
  */
 public class AuthRequest implements Credence {
-
-    private String username;
+    @NotEmpty
+    private String userName;
+    @NotEmpty
     private String password;
 
 
@@ -22,18 +25,17 @@ public class AuthRequest implements Credence {
         this.password = password;
     }
 
-
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     @Override
     public String getCredenceName() {
-        return this.username;
+        return null;
     }
 
     @Override
