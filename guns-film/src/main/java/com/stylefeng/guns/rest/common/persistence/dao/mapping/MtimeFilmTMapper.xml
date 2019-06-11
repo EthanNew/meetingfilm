@@ -45,6 +45,26 @@
     </select>
 
 
+    <resultMap id="FilmInfoBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.FilmInfoBO">
+        <id column="UUID" property="filmId" />
+        <result column="film_name" property="filmName" />
+        <result column="film_language" property="filmType" />
+        <result column="film_length" property="filmLength" />
+        <result column="film_cats" property="filmCats" />
+        <result column="img_address" property="imgAddress" />
+        </resultMap>
+
+    <select id="getFilmByFieldId" resultMap="FilmInfoBoMap">
+        SELECT hfi.`UUID`, film_name, film_language, film_length, film_cats, img_address
+        FROM mtime_hall_film_info_t hfi LEFT JOIN mtime_field_t f on hfi.film_id = f.film_id
+        <where>
+            <if test="fieldId != 99">
+                AND f.`UUID` = #{fieldId}
+            </if>
+        </where>
+    </select>
+
+
 
 
     <select id="getFilmDetailByName" resultType="com.stylefeng.guns.api.film.vo.FilmDetailVO">

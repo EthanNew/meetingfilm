@@ -100,10 +100,10 @@ public class CinemaServiceImpl implements CinemaService {
         return cinemaInfoBo;
     }
 
-
     @Override
-    public FilmInfoBO getFilmByfieldId(int fieldId) {
-        FilmInfoBO filmByfieId = fieldTMapper.getFilmByfieId(fieldId);
-        return filmByfieId;
+    public HallInfoBO getHallInfo(int fieldId) {
+        HallInfoBO hallInfoBO = hallMapper.getHallInfo(fieldId);
+        return hallInfoBO;
     }
+
 }

@@ -29,4 +29,20 @@
     </select>
 
 
+    <resultMap id="HallInfoBoMap" type="com.stylefeng.guns.rest.model.cinema.bo.HallInfoBO">
+        <id column="UUID" property="hallFieldId" />
+        <result column="hall_name" property="hallName" />
+        <result column="seat_address" property="seatFile" />
+        <result column="price" property="price"/>
+    </resultMap>
+
+    <select id="getHallInfo" resultMap="HallInfoBoMap">
+        SELECT f.`UUID`, f.hall_name, f.price, hd.seat_address
+        FROM mtime_field_t f LEFT JOIN mtime_hall_dict_t hd ON hd.`UUID` = f.`hall_id`
+        <where>
+            <if test="fieldId != 99">
+                f.`UUID` = #{fieldId}
+            </if>
+        </where>
+    </select>
 </mapper>

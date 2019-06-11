@@ -2,6 +2,7 @@ package com.stylefeng.guns.rest.modular.cinema;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.stylefeng.guns.api.film.FilmServiceApi;
+import com.stylefeng.guns.orderApi.OrderApi;
 import com.stylefeng.guns.rest.model.cinema.bo.*;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestCinemasVO;
 import com.stylefeng.guns.rest.model.cinema.requestvo.RequestConditionVO;
@@ -27,8 +28,12 @@ public class CinemaController {
 
     @Reference
     CinemaService cinemaService;
+
     @Reference
     FilmServiceApi filmService;
+
+    @Reference
+    OrderApi orderService;
 
     /**
      * 根据条件查询所有影院
@@ -82,7 +87,7 @@ public class CinemaController {
         try {
             CinemaInfoBO cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
             List<FilmBO> filmBos = filmService.getFilmList();
-            String imgPre = cinemaInfoBo.getImgUrl();
+            String imgPre = "http://img.meetingshop.cn/";
             Map<String, Object> map = new HashMap<>(16);
             map.put("cinemaInfo", cinemaInfoBo);
             map.put("filmList", filmBos);
@@ -99,19 +104,20 @@ public class CinemaController {
      * @param fieldId
      * @return
      */
-    @PostMapping("/getFieldInfo")
+    @RequestMapping("/getFieldInfo")
     public Object getFieldInfo(@RequestParam(value = "fieldId", defaultValue = "99") int fieldId,
                                @RequestParam(value = "cinemaId", defaultValue = "99") int cinemaId){
-        /*FieldBO fieldByfieldId = cinemaService.getFieldByfieldId(fieldId);
-        return null;*/
         try {
              CinemaInfoBO cinemaInfoBo = cinemaService.getCinemaInfo(cinemaId);
-             FilmInfoBO filmByfieldId = cinemaService.getFilmByfieldId(fieldId);
-             List<FilmBO> filmBos = filmService.getFilmList();
-             String imgPre = cinemaInfoBo.getImgUrl();
+             FilmInfoBO filmInfoBO = filmService.getFilmByFieldId(fieldId);
+             HallInfoBO hallInfoBO = cinemaService.getHallInfo(fieldId);
+             String soldSeats = orderService.getSoldSeatsByFieldId(fieldId);
+             hallInfoBO.setSoldSeats(soldSeats);
+             String imgPre = "http://img.meetingshop.cn/";
              Map<String, Object> map = new HashMap<>(16);
              map.put("cinemaInfo", cinemaInfoBo);
-             map.put("filmList", filmByfieldId );
+             map.put("filmInfo", filmInfoBO);
+             map.put("hallInfo", hallInfoBO);
              ResponseFilmsVO<Map<String, Object>> mapResponseFilmsVo = new ResponseFilmsVO<>(0, imgPre, map);
              return mapResponseFilmsVo;
         } catch (Exception e) {

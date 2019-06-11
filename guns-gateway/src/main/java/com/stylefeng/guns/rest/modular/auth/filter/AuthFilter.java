@@ -40,7 +40,7 @@ public class AuthFilter extends OncePerRequestFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
         //用户登录，注册直接放行
         String servletPath = request.getServletPath();
-        if (("/register").equals(servletPath) || ("/auth").equals(servletPath) || servletPath.startsWith("/cinema") || servletPath.startsWith("/film")){
+        if (("/user/register").equals(servletPath) || ("/auth").equals(servletPath) || servletPath.startsWith("/cinema") || servletPath.startsWith("/film")){
             chain.doFilter(request, response);
             return;
         }

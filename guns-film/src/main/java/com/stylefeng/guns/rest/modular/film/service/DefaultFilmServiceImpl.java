@@ -9,6 +9,7 @@ import com.stylefeng.guns.core.util.DateUtil;
 import com.stylefeng.guns.rest.common.persistence.dao.*;
 import com.stylefeng.guns.rest.common.persistence.model.*;
 import com.stylefeng.guns.rest.model.cinema.bo.FilmBO;
+import com.stylefeng.guns.rest.model.cinema.bo.FilmInfoBO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -365,6 +366,11 @@ public class DefaultFilmServiceImpl implements FilmServiceApi {
         return actors;
     }
 
+    @Override
+    public FilmInfoBO getFilmByFieldId(int fieldId) {
+        FilmInfoBO filmInfoBO = mtimeFilmTMapper.getFilmByFieldId(fieldId);
+        return filmInfoBO;
+    }
 
 
 }

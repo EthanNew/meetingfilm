@@ -2,6 +2,7 @@ package com.stylefeng.guns.api.film;
 
 import com.stylefeng.guns.api.film.vo.*;
 import com.stylefeng.guns.rest.model.cinema.bo.FilmBO;
+import com.stylefeng.guns.rest.model.cinema.bo.FilmInfoBO;
 
 
 import java.util.List;
@@ -59,4 +60,6 @@ public interface FilmServiceApi {
 
     // 获取演员信息
     List<ActorVO> getActors(String filmId);
+
+    FilmInfoBO getFilmByFieldId(int fieldId);
 }
