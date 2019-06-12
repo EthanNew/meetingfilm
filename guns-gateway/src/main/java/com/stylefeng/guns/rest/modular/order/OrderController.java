@@ -3,10 +3,13 @@ package com.stylefeng.guns.rest.modular.order;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.stylefeng.guns.orderApi.OrderApi;
+import com.stylefeng.guns.rest.config.properties.JwtProperties;
 import com.stylefeng.guns.rest.model.order.orderResVo.BuyTicketsResVo;
 import com.stylefeng.guns.rest.model.order.orderResVo.OrderInfoVo;
 import com.stylefeng.guns.rest.model.order.orderResVo.OrderVo;
 import com.stylefeng.guns.rest.modular.auth.util.JwtTokenUtil;
+import org.apache.catalina.servlet4preview.http.HttpServletRequest;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -19,6 +22,12 @@ public class OrderController {
 
     @Reference
     OrderApi orderApi;
+
+    @Autowired
+    JwtTokenUtil jwtTokenUtil;
+
+    @Autowired
+    JwtProperties jwtProperties;
 
     @RequestMapping(value = "/buyTickets", method = RequestMethod.POST)
     public BuyTicketsResVo buyTickets(@RequestParam("fieldId") String fieldId,

@@ -27,7 +27,7 @@
         <result column="order_timestamp" property="orderTimestamp"/>
         <result column="order_status" property="orderStatus"/>
     </resultMap>
-    
+
     <select id="getSoldSeatsByFieldId" resultType="string">
         select seats_ids from mtime_order_t where field_id = #{id}
     </select>
@@ -60,6 +60,5 @@
     <update id="updateOrderStatusByOrderid" >
         update mtime_order_t set order_status = #{status} where UUID = #{orderId}
     </update>
-
 
 </mapper>

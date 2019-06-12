@@ -46,7 +46,7 @@ public class MtimeUserTController {
     ResponseResult result;
 
     @PostMapping("/user/register")
-    public ResponseResult register(@RequestBody @Valid UserRegistVO userRegistVO) {
+    public ResponseResult register(@Valid UserRegistVO userRegistVO) {
         int i = MtimeUserTService.insertMtimeUser(userRegistVO);
         if (i == 1) return result.responseResult("用户已经存在", 1);
         if (i == 0) return result.responseResult("注册成功", 0);
